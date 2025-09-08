@@ -1,0 +1,6 @@
+Name: Om Theme (A Darker Dracula Theme)
+Id: omthemes.omthemes
+Description: This theme is based on Official Dracula Theme, Just a little darker (with and without italic).
+Version: 1.0.17
+Publisher: omthemes
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=omthemes.omthemes
