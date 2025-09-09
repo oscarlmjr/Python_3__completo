@@ -1,0 +1,36 @@
+[
+  [
+    {
+      "768286": {
+        "nome": "Oscar",
+        "idade": 45,
+        "tipo_pessoa": "Pessoa Física",
+        "numero": 768286,
+        "tipo_conta": "Conta Corrente"
+      }
+    },
+    {
+      "Gabriel": {
+        "nome": "Gabriel",
+        "idade": 15,
+        "tipo_pessoa": "Pessoa Física"
+      }
+    }
+  ],
+  [
+    {
+      "BV Code": {
+        "nome": "BV Code",
+        "cnpj": 37,
+        "tipo_pessoa": "Pessoa Jurídica"
+      }
+    },
+    {
+      "Gaba Game": {
+        "nome": "Gaba Game",
+        "cnpj": 37,
+        "tipo_pessoa": "Pessoa Jurídica"
+      }
+    }
+  ]
+]
