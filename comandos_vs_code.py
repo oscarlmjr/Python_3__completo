@@ -10,3 +10,4 @@
 # Enter no commit: Ctrl + Enter
 # Adiconar cursor à seleção: Ctrl + Shift + l
 # Replace: Ctrl + h
+# Emoji Windows + .

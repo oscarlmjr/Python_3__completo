@@ -6,19 +6,26 @@
 # https://docs.python.org/3/library/collections.html#collections.namedtuple
 # https://docs.python.org/3/library/typing.html#typing.NamedTuple
 # https://brasilescola.uol.com.br/curiosidades/baralho.htm
-from collections import namedtuple
+# from collections import namedtuple
+from typing import NamedTuple
 
 
-Carta = namedtuple('Carta', ['valor', 'naipe'])
+class Carta(NamedTuple):
+    valor: str = 'VALOR'
+    naipe: str = 'NAIPE'
 
-as_espadas = Carta('A', '♠')
+as_espadas = Carta('A')
+
+print(as_espadas._asdict())
 print(as_espadas)
-
 print(as_espadas[0])
 print(as_espadas.valor)
 print(as_espadas[1])
 print(as_espadas.naipe)
-
 print()
 print(as_espadas._fields)
 print(as_espadas._field_defaults)
+
+print()
+for valor in as_espadas:
+    print(valor)
