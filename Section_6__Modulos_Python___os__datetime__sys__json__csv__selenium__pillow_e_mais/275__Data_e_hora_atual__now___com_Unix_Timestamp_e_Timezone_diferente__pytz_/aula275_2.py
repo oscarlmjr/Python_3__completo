@@ -11,7 +11,13 @@
 # Instalando o pytz
 # pip install pytz types-pytz
 from datetime import datetime
+from pytz import timezone
 
 
-data = datetime.now()
+data = datetime.now(timezone('America/Recife'))
+print(data)
+data = datetime.now(timezone('America/New_York'))
+print(data)
+
+data = datetime(2022, 4, 20, 7, 49, 23, tzinfo=timezone('America/New_York'))
 print(data)
