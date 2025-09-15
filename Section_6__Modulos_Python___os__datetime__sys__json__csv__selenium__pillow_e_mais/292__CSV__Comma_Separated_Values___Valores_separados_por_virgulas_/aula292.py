@@ -17,3 +17,5 @@
 # 2 - Cada registro deve estar em uma linha
 # 3 - Não deixar linhas ou espaços sobrando
 # 4 - Use o caractere de escape (") quando o delimitador aparecer no valor.
+
+# https://docs.google.com/spreadsheets/d/12rqI74CeTuCx-E0hlGuVbK8EHqw98couYbdfoW9EwIk/edit?gid=96103348#gid=96103348
