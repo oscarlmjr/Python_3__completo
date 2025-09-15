@@ -1,9 +1,9 @@
 # Métodos em instâncias de classes Python
 
 class Carro:
-    
-    def __init__(self):
-        self.nome = 'Fusca'   # Hard coded
+	
+	def __init__(self):
+		self.nome = 'Fusca'   # Hard coded
 
 
 fusca = Carro()

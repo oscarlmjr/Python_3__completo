@@ -5,10 +5,10 @@
 # classe.
 
 class Classe:
-    
-    @staticmethod
-    def funcao_que_esta_na_classe(*args, **kwargs):
-        print('Oi', args, kwargs)
+	
+	@staticmethod
+	def funcao_que_esta_na_classe(*args, **kwargs):
+		print('Oi', args, kwargs)
 
 
 c1 = Classe()

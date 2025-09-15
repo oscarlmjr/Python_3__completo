@@ -1,11 +1,11 @@
 valor = True
 if valor:
-    pass  # ou ...
+	pass  # ou ...
 else:
-    print('valor falso.')
+	print('valor falso.')
 
 valor = False
 if valor:
-    ...  # ou pass
+	...  # ou pass
 else:
-    print('valor -> falso.')
+	print('valor -> falso.')

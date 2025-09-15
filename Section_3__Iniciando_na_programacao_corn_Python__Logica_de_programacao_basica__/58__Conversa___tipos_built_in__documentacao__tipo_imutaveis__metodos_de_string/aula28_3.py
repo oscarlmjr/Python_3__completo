@@ -3,14 +3,14 @@ num2 = input('Digite outro número: ')
 print(num1.isnumeric())  #  .isnumeric .isdigit .isdecimal
 print(num2.isnumeric())  #  retornam valores booleanos
 if num1.isdigit() and num2.isdigit():  #  números inteiros
-    num1 = int(num1); num2 = int(num2)
-    print(num1 + num2)
+	num1 = int(num1); num2 = int(num2)
+	print(num1 + num2)
 else:
-    print('Não é possível converter os números para '
-          'realizar contas.')
+	print('Não é possível converter os números para '
+		  'realizar contas.')
 try:
-    num1 = float(num1)
-    num2 = float(num2)
-    print(num1 + num2)
+	num1 = float(num1)
+	num2 = float(num2)
+	print(num1 + num2)
 except:
-    print('ERROR')
+	print('ERROR')

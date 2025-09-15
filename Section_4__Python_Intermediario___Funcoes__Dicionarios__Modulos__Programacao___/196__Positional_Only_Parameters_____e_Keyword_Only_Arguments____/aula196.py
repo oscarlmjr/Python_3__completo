@@ -11,14 +11,14 @@
 
 
 def soma(a, b, /):
-    print(a + b)
+	print(a + b)
 
 
 soma(1, 2)
 
 
 def soma(*args):
-    print(sum(args))
+	print(sum(args))
 
 
 soma(1)

@@ -1,16 +1,16 @@
 # Decoradores com parâmetros
 def decoradora(func):
-    print(func.__name__, type(func))
+	print(func.__name__, type(func))
 
-    def aninhada(*args):
-        print(func.__name__, type(func), *args, type(args))
-        res = func(*args)
-        return res
-    return aninhada
+	def aninhada(*args):
+		print(func.__name__, type(func), *args, type(args))
+		res = func(*args)
+		return res
+	return aninhada
 
 @decoradora
 def soma(x, y):
-    return x + y
+	return x + y
 
 multiplica = decoradora(lambda x, y: x * y)
 

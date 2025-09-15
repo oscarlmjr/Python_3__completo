@@ -11,23 +11,23 @@
 # update - Atualiza um dicionário com outro
 
 pessoa = {
-    'nome': 'Luiz Otávio', 
-    'sobrenome': 'Miranda1',
-    'sobrenome': 'Miranda2',
-    'sobrenome': 'Miranda3',
-    }
+	'nome': 'Luiz Otávio', 
+	'sobrenome': 'Miranda1',
+	'sobrenome': 'Miranda2',
+	'sobrenome': 'Miranda3',
+	}
 
 print(len(pessoa))
 print(pessoa['sobrenome'], '\n')
 
 
 for chave in pessoa:
-    print(chave)
+	print(chave)
 
 print('')
 
 for chave, valor in pessoa.items():
-    print(chave, valor)
+	print(chave, valor)
 
 print('')
 

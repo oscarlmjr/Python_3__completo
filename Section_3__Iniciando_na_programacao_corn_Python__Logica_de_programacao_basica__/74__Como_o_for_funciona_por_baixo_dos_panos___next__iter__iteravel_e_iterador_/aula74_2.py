@@ -9,8 +9,8 @@ texto = 'Luiz'  # iterável
 iteratador = iter(texto)  # iterator
 
 while True:
-    try:
-        letra = next(iteratador)
-        print(letra)
-    except StopIteration:
-        break
+	try:
+		letra = next(iteratador)
+		print(letra)
+	except StopIteration:
+		break

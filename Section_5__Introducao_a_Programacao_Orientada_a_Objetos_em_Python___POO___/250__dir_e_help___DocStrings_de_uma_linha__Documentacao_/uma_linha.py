@@ -5,4 +5,4 @@ variavel = 'variavel'
 
 def funcao():
 
-    return 1
+	return 1

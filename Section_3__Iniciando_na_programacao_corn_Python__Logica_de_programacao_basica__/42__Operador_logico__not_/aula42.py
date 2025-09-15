@@ -6,7 +6,7 @@
 senha = input('Senha: ')
 
 if not senha:
-    print('Você não digitou nada')
+	print('Você não digitou nada')
 
 print(not 1)  # False
 print(not 0)  # True

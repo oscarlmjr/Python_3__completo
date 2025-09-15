@@ -2,14 +2,14 @@
 
 class Pessoa:
 
-    atributo = 'valor'
+	atributo = 'valor'
 
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
+	def __init__(self, nome, idade):
+		self.nome = nome
+		self.idade = idade
 
-    def get_ano_nascimento(self):
-        return 2022 - self.idade
+	def get_ano_nascimento(self):
+		return 2022 - self.idade
 
 
 p1 = Pessoa('João', 35)

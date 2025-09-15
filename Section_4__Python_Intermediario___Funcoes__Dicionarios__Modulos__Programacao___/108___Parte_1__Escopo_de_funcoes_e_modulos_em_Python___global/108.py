@@ -8,8 +8,8 @@ podem ser alcançados.
 '''
 
 def escopo():
-    x = 1
-    print(x)
+	x = 1
+	print(x)
 
 
 # print(x)   # NameError: name 'x' is not defined

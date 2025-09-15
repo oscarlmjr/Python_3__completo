@@ -11,5 +11,5 @@ caminho = os.path.join('D:\\', 'Programs')
 counter = count()
 
 for root, dirs, files in os.walk(caminho):
-    the_counter = next(counter)
-    print(the_counter, 'Pasta atual', root)
+	the_counter = next(counter)
+	print(the_counter, 'Pasta atual', root)

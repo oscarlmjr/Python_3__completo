@@ -7,8 +7,8 @@ from aula161_package import produtos
 
 novos_produtos = copy.deepcopy(produtos)
 novos_produtos = [
-    {**produto, 'preco': round(produto['preco'] * 1.1, 2)}
-      for produto in produtos
+	{**produto, 'preco': round(produto['preco'] * 1.1, 2)}
+	  for produto in produtos
 ]
 
 print(produtos, '\n')

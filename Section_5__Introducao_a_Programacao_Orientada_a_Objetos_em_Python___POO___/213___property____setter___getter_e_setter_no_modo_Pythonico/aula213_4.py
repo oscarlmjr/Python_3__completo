@@ -8,19 +8,19 @@
 #  🐍🤓🤯🤯🤯🤯
 
 class Caneta:
-    def __init__(self, cor):
-        # _private protected public
-        self._cor = cor
+	def __init__(self, cor):
+		# _private protected public
+		self._cor = cor
 
-    @property
-    def cor(self):
-        return self._cor
+	@property
+	def cor(self):
+		return self._cor
 
-    @cor.setter
-    def cor(self, valor):
-        if valor == 'Rosa':
-            raise ValueError('Não aceito essa cor')
-        self._cor = valor
+	@cor.setter
+	def cor(self, valor):
+		if valor == 'Rosa':
+			raise ValueError('Não aceito essa cor')
+		self._cor = valor
 
 
 caneta = Caneta('Azul')

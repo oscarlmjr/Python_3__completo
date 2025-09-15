@@ -4,7 +4,7 @@
 # do mesmo. Exibir o valor na tela.
 
 def aumento_percentual(valor, percentual):
-    return valor + (valor * percentual / 100)
+	return valor + (valor * percentual / 100)
 
 ap = aumento_percentual(50, 100)
 print(ap)
@@ -16,7 +16,7 @@ ap = aumento_percentual(15, 100)
 print(ap)
 
 def aumento_percentual(valor, percentual):
-    print(valor + (valor * percentual / 100))
+	print(valor + (valor * percentual / 100))
 
 aumento_percentual(50, 100)
 aumento_percentual(100, 10)

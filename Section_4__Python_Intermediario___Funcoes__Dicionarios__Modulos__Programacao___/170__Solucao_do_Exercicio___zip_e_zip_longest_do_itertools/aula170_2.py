@@ -16,8 +16,8 @@ l1 = ['Salvador', 'Ubatuba', 'Belo Horizonte']
 l2 = ['BA', 'SP', 'MG', 'RJ']
 
 def zipar(l1, l2):
-    
-    return list(zip(l1, l2))
+	
+	return list(zip(l1, l2))
 
 
 lista_zip = zipar(l1,l2)
@@ -29,11 +29,11 @@ print(lista_zip)
 # l3 = []
 
 # if len(l1) < len(l2):
-#     for n in range(len(l1)):
-#         l3 += [(l1[n], l2[n])]
+#	 for n in range(len(l1)):
+#		 l3 += [(l1[n], l2[n])]
 # else:
-#     for n in range(len(l2)):
-#         l3 += [(l1[n], l2[n])]
+#	 for n in range(len(l2)):
+#		 l3 += [(l1[n], l2[n])]
 
 # print(l3)
 
@@ -41,28 +41,28 @@ print(lista_zip)
 # uf = ['BA', 'SP', 'MG', 'RJ']
 #
 # def tamanho(x):
-#     def tamanho_b(y):
-#         if x < y:
-#             return cidade
-#         return uf
-#     return tamanho_b
+#	 def tamanho_b(y):
+#		 if x < y:
+#			 return cidade
+#		 return uf
+#	 return tamanho_b
 #
 # lista = []
 # tamanho_cidade = tamanho(len(cidade))
 #
 # if cidade == tamanho_cidade(len(uf)):
-#     for n in range(len(cidade)):
-#         lista.append((cidade[n], uf[n]))
+#	 for n in range(len(cidade)):
+#		 lista.append((cidade[n], uf[n]))
 # else:
-#     for n in range(len(uf)):
-#         lista.append((uf[n], cidade[n]))
+#	 for n in range(len(uf)):
+#		 lista.append((uf[n], cidade[n]))
 #
 # print(lista)
 
 
 
 # def listas(func, x):
-#     return func(x)
+#	 return func(x)
 
 # tamanho_cidade = listas(tamanho, len(cidade))
 

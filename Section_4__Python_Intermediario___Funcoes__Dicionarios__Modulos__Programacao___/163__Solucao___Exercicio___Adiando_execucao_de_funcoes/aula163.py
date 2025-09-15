@@ -1,14 +1,14 @@
 
 def soma(x, y):   # assinatura da função
-    return x + y
+	return x + y
 
 def multiplica(x, y):
-    return x * y
+	return x * y
 
 def executa(funcao, *args):
-    def interna(y):   # closure
-        return funcao(*args, y)
-    return interna
+	def interna(y):   # closure
+		return funcao(*args, y)
+	return interna
 
 
 soma_com_cinco = executa(soma, 5)

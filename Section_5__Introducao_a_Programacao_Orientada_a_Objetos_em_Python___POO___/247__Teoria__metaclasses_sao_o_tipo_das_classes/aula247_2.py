@@ -1,6 +1,6 @@
 # object acima
 class Foo(object):
-    ...
+	...
 
 
 f = Foo()

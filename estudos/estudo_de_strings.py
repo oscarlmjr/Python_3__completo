@@ -15,8 +15,8 @@ print('')
 # b = ''
 
 # for n in a:
-#     if n.isdigit():
-#         b += n
+#	 if n.isdigit():
+#		 b += n
 # a = b
 # print(a)
 

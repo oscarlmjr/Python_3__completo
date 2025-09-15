@@ -17,12 +17,12 @@ from abc import ABC, abstractmethod
 
 
 class Notificacao(ABC):
-    def __init__(self, mensagem) -> None:
-        self.mensagem = mensagem
+	def __init__(self, mensagem) -> None:
+		self.mensagem = mensagem
 
-    @abstractmethod
-    def enviar(self) -> bool:
-        ...
+	@abstractmethod
+	def enviar(self) -> bool:
+		...
 
 
 n = Notificacao('testando notificação')

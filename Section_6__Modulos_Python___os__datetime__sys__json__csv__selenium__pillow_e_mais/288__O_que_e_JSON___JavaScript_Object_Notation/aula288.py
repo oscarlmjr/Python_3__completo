@@ -14,11 +14,11 @@
 # null: é um valor especial que representa ausência de valor
 #
 # Ao converter de Python para JSON:
-# Python        JSON
-# dict          object
+# Python		JSON
+# dict		  object
 # list, tuple   array
-# str           string
-# int, float    number
-# True          true
-# False         false
-# None          null
+# str		   string
+# int, float	number
+# True		  true
+# False		 false
+# None		  null

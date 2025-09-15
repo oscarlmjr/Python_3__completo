@@ -8,6 +8,6 @@ caminho_arquivo += 'aula188.txt'
 
 with open(caminho_arquivo, 'b') as arquivo:   # ValueError: Must have exactly one 
 # of create/read/write/append mode and at most one plus
-    arquivo.write('Linha 1\n')
-    arquivo.write('Linha 2\n')
-    arquivo.writelines(('Linha 3\n', 'Linha 4\n'))
+	arquivo.write('Linha 1\n')
+	arquivo.write('Linha 2\n')
+	arquivo.writelines(('Linha 3\n', 'Linha 4\n'))

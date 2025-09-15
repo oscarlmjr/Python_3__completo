@@ -23,18 +23,18 @@ caminho_arquivo = 'D:\\Desenvolvimento\\curso_python\\secao_4\\187__with_open__c
 caminho_arquivo += 'aula187.txt'
 
 with open(caminho_arquivo, 'w+') as arquivo:
-    arquivo.write('Linha 1\n')
-    arquivo.write('Linha 2\n')
-    arquivo.writelines(('Linha 3\n', 'Linha 4\n'))   # iterável
-    arquivo.seek(0, 0)   # move o cursor para o início do arquivo
-    arquivo.write('Linha 5\n')
-    arquivo.write('Linha 6\n')
-    print(arquivo.read())
-    print('Lendo')
-    print(arquivo.readline)
+	arquivo.write('Linha 1\n')
+	arquivo.write('Linha 2\n')
+	arquivo.writelines(('Linha 3\n', 'Linha 4\n'))   # iterável
+	arquivo.seek(0, 0)   # move o cursor para o início do arquivo
+	arquivo.write('Linha 5\n')
+	arquivo.write('Linha 6\n')
+	print(arquivo.read())
+	print('Lendo')
+	print(arquivo.readline)
 
 print('#' * 20)
 
 with open(caminho_arquivo, 'r') as arquivo:
-    print(arquivo.read())
-    
+	print(arquivo.read())
+	

@@ -1,25 +1,25 @@
 # json.dumps e json.loads com strings + typing.TypedDict
 # Ao converter de Python para JSON:
-# Python        JSON
-# dict          object
+# Python		JSON
+# dict		  object
 # list, tuple   array
-# str           string
-# int, float    number
-# True          true
-# False         false
-# None          null
+# str		   string
+# int, float	number
+# True		  true
+# False		 false
+# None		  null
 import json
 from typing import TypedDict
 
 
 class Movie(TypedDict):
-    title: str
-    original_title: str
-    is_movie: bool
-    imdb_rating: float
-    year: int
-    characters: list[str]
-    budget: None | float
+	title: str
+	original_title: str
+	is_movie: bool
+	imdb_rating: float
+	year: int
+	characters: list[str]
+	budget: None | float
 
 
 string_json = '''

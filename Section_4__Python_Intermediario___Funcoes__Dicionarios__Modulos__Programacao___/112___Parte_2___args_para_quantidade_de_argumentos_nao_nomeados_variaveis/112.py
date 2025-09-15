@@ -1,10 +1,10 @@
 
 def soma(*args):
 
-    total = 0
-    for n in range(len(args)):
-        total += args[n]
-    return total
+	total = 0
+	for n in range(len(args)):
+		total += args[n]
+	return total
 
 
 soma_1_2_3 = soma(1, 2, 3)

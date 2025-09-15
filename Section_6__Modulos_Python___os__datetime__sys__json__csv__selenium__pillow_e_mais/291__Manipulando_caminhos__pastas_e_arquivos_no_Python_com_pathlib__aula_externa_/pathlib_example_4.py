@@ -16,7 +16,7 @@ caminho_arquivo.touch()   # subscreve
 caminho_arquivo.write_text('')
 
 with caminho_arquivo.open('a+') as file:
-    file.write('Uma linha\n')
-    file.write('Outra linha\n')
+	file.write('Uma linha\n')
+	file.write('Outra linha\n')
 
 print(caminho_arquivo.read_text())

@@ -8,18 +8,18 @@
 #  🐍🤓🤯🤯🤯🤯
 
 class Caneta:
-    def __init__(self, cor):
-        # _private protected public
-        self.cor = cor
+	def __init__(self, cor):
+		# _private protected public
+		self.cor = cor
 
-    @property
-    def cor(self):
-        return self._cor
+	@property
+	def cor(self):
+		return self._cor
 
-    @cor.setter
-    def cor(self, valor):
-        print('ESTOU NO SETTER')
-        self._cor = valor
+	@cor.setter
+	def cor(self, valor):
+		print('ESTOU NO SETTER')
+		self._cor = valor
 
 
 caneta = Caneta('Azul')

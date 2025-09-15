@@ -3,12 +3,12 @@ Retorno de valores de funções (return)
 '''
 
 def soma(x, y):
-    print('Olha')
-    print('so')
-    print('que')
-    print('legal')
-    return x + y
-    print('Após o return')   # não é lido / não gera Error
+	print('Olha')
+	print('so')
+	print('que')
+	print('legal')
+	return x + y
+	print('Após o return')   # não é lido / não gera Error
 
 
 print('soma1')

@@ -3,9 +3,9 @@
 # list
 """
 lista = [
-    ['Edu', 'João', 'Luiz'],
-    ['Maria', 'Aline', 'Joana'],
-    ['Helena', 'Ed', 'Lu']
+	['Edu', 'João', 'Luiz'],
+	['Maria', 'Aline', 'Joana'],
+	['Helena', 'Ed', 'Lu']
 ]
 print(lista[1][2])
 enumerada = enumerate(lista)

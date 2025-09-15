@@ -6,19 +6,19 @@ import pyperclip
 
 def criar_string(string='', nova_string=''):
 
-    string = input('Digite uma string: ')
+	string = input('Digite uma string: ')
 
-    for n in string:
-        if n.isalpha() or n.isdigit():
-            nova_string += n
-        else:
-            nova_string += '_'
+	for n in string:
+		if n.isalpha() or n.isdigit():
+			nova_string += n
+		else:
+			nova_string += '_'
 
-    nova_string = unidecode.unidecode(nova_string)
-    pyperclip.copy(nova_string)
-    print(nova_string)
-    # print(unidecode.unidecode(nova_string), '\n')
-    return criar_string()
+	nova_string = unidecode.unidecode(nova_string)
+	pyperclip.copy(nova_string)
+	print(nova_string)
+	# print(unidecode.unidecode(nova_string), '\n')
+	return criar_string()
 
 criar_string()
 
@@ -26,19 +26,19 @@ criar_string()
 
 # def criar_string(string='', nova_string=''):
 #
-#     if nova_string != '':
-#         print(nova_string, '\n')
+#	 if nova_string != '':
+#		 print(nova_string, '\n')
 #
-#     string = input('Digite uma string: ')
-#     for n in string:
-#         if n.isalpha() or n.isdigit():
-#             nova_string += n
-#         else:
-#             nova_string += '_'
-#     import unidecode
+#	 string = input('Digite uma string: ')
+#	 for n in string:
+#		 if n.isalpha() or n.isdigit():
+#			 nova_string += n
+#		 else:
+#			 nova_string += '_'
+#	 import unidecode
 #
-#     nova_string = unidecode.unidecode(nova_string)
-#     return criar_string(nova_string=nova_string)
+#	 nova_string = unidecode.unidecode(nova_string)
+#	 return criar_string(nova_string=nova_string)
 #
 #
 # criar_string()
@@ -46,18 +46,18 @@ criar_string()
 
 # while True:
 #
-#     nova_string = ''
-#     string = input('Digite uma string: ')
+#	 nova_string = ''
+#	 string = input('Digite uma string: ')
 #
-#     for n in string:
-#         if n.isalpha() or n.isdigit():
-#             nova_string += n
-#         else:
-#             nova_string += '_'
-#     import unidecode
-#     print(unidecode.unidecode(nova_string))
-    # print(nova_string, '\n')
-    # os.system('pause')
+#	 for n in string:
+#		 if n.isalpha() or n.isdigit():
+#			 nova_string += n
+#		 else:
+#			 nova_string += '_'
+#	 import unidecode
+#	 print(unidecode.unidecode(nova_string))
+	# print(nova_string, '\n')
+	# os.system('pause')
 # input()
 
 

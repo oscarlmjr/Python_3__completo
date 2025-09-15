@@ -12,10 +12,10 @@ print('r1', hasattr(r1, '__next__'), '\n')
 
 print('count')
 for i in c1:
-    if i > 5:
-        break
-    print(i)
+	if i > 5:
+		break
+	print(i)
 
 print('\nrange')
 for i in r1:
-    print(i)
+	print(i)

@@ -42,7 +42,7 @@ print(lista[0][0]['a'])
 # lista.extend('a', 'b', 'c')   # TypeError: list.extend() takes exactly one argument (3 given)
 
 # lista_2 = ['a', 'b', 'c']
-# lista.extend(*lista_2)   #    # TypeError: list.extend() takes exactly one argument (3 given)
+# lista.extend(*lista_2)   #	# TypeError: list.extend() takes exactly one argument (3 given)
 
 # lista.extend(lista_2)   # ['a', 'b', 'c']
 # lista = []
@@ -67,18 +67,18 @@ print(lista[0][0]['a'])
 # lista = ['a', 'b', 'c']   # TypeError: 'str' object is not callable
 
 # def a():
-#     print('a', type(a))   # a <class 'function'>
+#	 print('a', type(a))   # a <class 'function'>
 
 # def b():
-#     print('b')
+#	 print('b')
 
 # def c():
-#     print('c')
+#	 print('c')
 
 # lista = [a, b, c]
 # for l in lista:
-#     l()
-#     print(l, type(l))    
+#	 l()
+#	 print(l, type(l))	
 
 ###########################
 
@@ -86,10 +86,10 @@ print(lista[0][0]['a'])
 
 
 # for i in enumerate(lista):
-#     print(i)
+#	 print(i)
 
 # for i, n in enumerate(lista):
-#     print(i, n)
+#	 print(i, n)
 
 
 ###########################
@@ -110,10 +110,10 @@ print(lista[0][0]['a'])
 # print(lista)
 
 # for n, p in enumerate(lista, 1):
-#     print(n, type(n), p, type(p))
+#	 print(n, type(n), p, type(p))
 
 # for n in enumerate(lista, 1):
-#     print(n)
+#	 print(n)
 
 ###########################
 
@@ -152,30 +152,30 @@ print(lista[0][0]['a'])
 
 
 # def printer_iter(iterator):
-#     print(*list(iterator), sep='\n')
-#     print()
+#	 print(*list(iterator), sep='\n')
+#	 print()
 #
 # produtos = [
-#     {'nome': 'Produto 5', 'preco': 10.00},
-#     {'nome': 'Produto 1', 'preco': 22.32},
-#     {'nome': 'Produto 3', 'preco': 10.11},
-#     {'nome': 'Produto 2', 'preco': 105.87},
-#     {'nome': 'Produto 4', 'preco': 69.90},
+#	 {'nome': 'Produto 5', 'preco': 10.00},
+#	 {'nome': 'Produto 1', 'preco': 22.32},
+#	 {'nome': 'Produto 3', 'preco': 10.11},
+#	 {'nome': 'Produto 2', 'preco': 105.87},
+#	 {'nome': 'Produto 4', 'preco': 69.90},
 # ]
 #
 # def aumentar_porcentagem(valor, porcentagem):
-#     return round(valor * porcentagem, 2)
+#	 return round(valor * porcentagem, 2)
 #
 # aumentar_dez_porcento = partial(aumentar_porcentagem, porcentagem=1.1)
 #
 # novos_produtos = []
 # for p in produtos:
-#     novos_produtos.append({**p, 'preco': aumentar_dez_porcento(p['preco'])})
+#	 novos_produtos.append({**p, 'preco': aumentar_dez_porcento(p['preco'])})
 
 
 # novos_produtos = [
-#     {**p, 'preco': aumentar_dez_porcento(p['preco'])}
-#     for p in produtos
+#	 {**p, 'preco': aumentar_dez_porcento(p['preco'])}
+#	 for p in produtos
 # ]
 #
 # printer_iter(produtos)
@@ -199,7 +199,7 @@ print(lista[0][0]['a'])
 
 
 # def funcao_max(l1, l2):
-#     return min(l1, l2)
+#	 return min(l1, l2)
 #
 #
 # l1 = ['Salvador', 'Ubatuba', 'Belo Horizonte']
@@ -214,10 +214,10 @@ print(lista[0][0]['a'])
 
 
 # def funcao(x):
-#     return x
+#	 return x
 #
 # def executa(funcao, *args):
-#     return funcao(*args)
+#	 return funcao(*args)
 #
 #
 # lista = [3]
@@ -298,15 +298,15 @@ print(lista[0][0]['a'])
 # print(lista)
 
 # def func(*args):
-#     args = list(args)
-#     print(args)
-#     print(*args)
+#	 args = list(args)
+#	 print(args)
+#	 print(*args)
 # func('12345')
 #
 # def func(*args):
-#     args = (args)
-#     print(args)
-#     print(*args)
+#	 args = (args)
+#	 print(args)
+#	 print(*args)
 # func('12345')
 
 # t1 = [1, 2, 3, 4, 5]
@@ -347,8 +347,8 @@ print(lista[0][0]['a'])
 # a = '1', '2', '3', '4', '5'
 # b = ''
 # for n in range(len(a)):
-#     b += str(a[n])
-#     print(b)
+#	 b += str(a[n])
+#	 print(b)
 
 # a = '12345'
 # a = [a]

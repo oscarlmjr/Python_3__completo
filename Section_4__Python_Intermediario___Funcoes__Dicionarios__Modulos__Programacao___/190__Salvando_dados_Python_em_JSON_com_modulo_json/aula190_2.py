@@ -10,7 +10,7 @@ import json
 # null = None
 
 with open('aula190.json', 'r', encoding='utf8') as arquivo:
-    pessoa = json.load(arquivo)
-    print(pessoa, '\n')
-    print(type(pessoa), '\n')
-    print(pessoa['nome'])
+	pessoa = json.load(arquivo)
+	print(pessoa, '\n')
+	print(type(pessoa), '\n')
+	print(pessoa['nome'])

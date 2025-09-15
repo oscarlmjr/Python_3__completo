@@ -6,7 +6,7 @@
 
 
 def inverte_string(string):
-    return string[-1::-1]   # [::-1]
+	return string[-1::-1]   # [::-1]
 
 
 inverte = inverte_string('Luiz')

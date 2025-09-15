@@ -15,17 +15,17 @@
 # traceback. Se ele retornar True, exceção no with será
 # suprimida.
 # with open('aula149.txt', 'w') as arquivo:
-#     ...
+#	 ...
 class MyContextManager:
-    
-    def __enter__(self):
-        print('ENTER')
+	
+	def __enter__(self):
+		print('ENTER')
 
-    def __exit__(self, class_exception, exception_, traceback_):
-        print('EXIT')
+	def __exit__(self, class_exception, exception_, traceback_):
+		print('EXIT')
 
 
 instancia = MyContextManager()
 
 with instancia as alguma_coisa:
-    print('WITH')
+	print('WITH')

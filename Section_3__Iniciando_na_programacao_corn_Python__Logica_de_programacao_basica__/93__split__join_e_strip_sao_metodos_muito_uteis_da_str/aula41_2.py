@@ -6,8 +6,8 @@ Split, Join, Enumerate em Python
 # list / iteráveis
 """
 string = 'O Brasil é o país do futebol, ' \
-         'o Brasil é penta.'
+		 'o Brasil é penta.'
 lista_1 = string.split(' ')
 lista_2 = string.split(',')
 for valor in lista_1:
-    print(valor)
+	print(valor)

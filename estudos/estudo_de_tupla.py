@@ -11,8 +11,8 @@
 # lista = []
 
 # for n in tupla:
-#     x, y = n
-#     lista.append(x + y)
+#	 x, y = n
+#	 lista.append(x + y)
 
 # print(lista)
 
@@ -25,7 +25,7 @@
 # print(x, y)
 
 # for x in tupla:
-#     print(x)
+#	 print(x)
 
 ########################
 

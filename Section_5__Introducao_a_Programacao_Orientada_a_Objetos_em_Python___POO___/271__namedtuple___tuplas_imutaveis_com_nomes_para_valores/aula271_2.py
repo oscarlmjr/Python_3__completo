@@ -11,8 +11,8 @@ from collections import namedtuple
 
 
 Carta = namedtuple(
-    'Carta', ['valor', 'naipe'],
-    defaults=['VALOR', 'NAIPE']
+	'Carta', ['valor', 'naipe'],
+	defaults=['VALOR', 'NAIPE']
 )
 
 as_espadas = Carta('A', '♠')

@@ -5,7 +5,7 @@
 # Enums em python:
 #   - são um conjunto de nomes simbólicos (membros) ligados a valores únicos
 #   - podem ser iterados para retornar seus membros canônicos na ordem de
-#       definição
+#	   definição
 # enum.Enum é a superclasse para suas enumerações. Mas também pode ser usada
 #   diretamente (mesmo assim, Enums não são classes normais em Python).
 # Você poderá usar seu Enum com type annotations, com isinstance e
@@ -16,10 +16,10 @@
 # valor = Classe.chave.value
 
 def mover(direcao):
-    if direcao not in ['esquerda', 'direita']:
-        raise ValueError('Direção não encontrada')
-        
-    print(f'Movendo para {direcao}')
+	if direcao not in ['esquerda', 'direita']:
+		raise ValueError('Direção não encontrada')
+		
+	print(f'Movendo para {direcao}')
 
 
 mover('esquerda')

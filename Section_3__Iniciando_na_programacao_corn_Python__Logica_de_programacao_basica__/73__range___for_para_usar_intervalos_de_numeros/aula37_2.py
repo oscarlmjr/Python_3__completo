@@ -6,8 +6,8 @@ Função range(start=0, stop, step=1) default
 texto = 'Python'
 
 for n, letra in enumerate(texto):
-    print(n, letra)
+	print(n, letra)
 for n in enumerate(texto):
-    print(n)
+	print(n)
 for letra in texto:
-    print(letra)
+	print(letra)

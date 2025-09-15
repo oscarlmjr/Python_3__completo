@@ -1,14 +1,14 @@
 class MeuError(Exception):
-    ...
+	...
 
 
 def levantar():
-    raise MeuError('A mensagem do meu erro')
+	raise MeuError('A mensagem do meu erro')
 
 
 try:
-    levantar()
-    
+	levantar()
+	
 except MeuError as error:
-    print(error)
-    ...
+	print(error)
+	...

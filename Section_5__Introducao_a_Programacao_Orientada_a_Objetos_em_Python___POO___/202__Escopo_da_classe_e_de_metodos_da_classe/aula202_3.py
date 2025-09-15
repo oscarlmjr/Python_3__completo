@@ -2,11 +2,11 @@
 
 class Animal:
 
-    def __init__(self, nome):
-        self.nome = nome
+	def __init__(self, nome):
+		self.nome = nome
 
-        variavel = 'valor'
-        print(variavel)
+		variavel = 'valor'
+		print(variavel)
 
 
 leao = Animal(nome='Leão')

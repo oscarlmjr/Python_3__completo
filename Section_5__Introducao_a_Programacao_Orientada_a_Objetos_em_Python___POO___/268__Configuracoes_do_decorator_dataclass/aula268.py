@@ -10,12 +10,12 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class Pessoa:
-    nome: str
-    sobrenome: str
+	nome: str
+	sobrenome: str
 
 
 if __name__ == '__main__':
-    p1 = Pessoa('Maria', 'Helena')
-    p1.nome = 'Ana'
-    print(p1)
-    print(p1.nome)
+	p1 = Pessoa('Maria', 'Helena')
+	p1.nome = 'Ana'
+	print(p1)
+	print(p1.nome)

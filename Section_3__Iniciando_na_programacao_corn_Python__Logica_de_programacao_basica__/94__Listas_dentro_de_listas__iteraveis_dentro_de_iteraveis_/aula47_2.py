@@ -11,4 +11,4 @@ for / while
 8 2
 """
 for n in range(9):
-    print(n, 10 - n)
+	print(n, 10 - n)

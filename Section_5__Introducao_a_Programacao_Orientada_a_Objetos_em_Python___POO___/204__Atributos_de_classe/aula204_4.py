@@ -2,14 +2,14 @@
 
 class Pessoa:
 
-    ano_atual = 2022
+	ano_atual = 2022
 
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
+	def __init__(self, nome, idade):
+		self.nome = nome
+		self.idade = idade
 
-    def get_ano_nascimento(self):
-        return self.ano_atual - self.idade
+	def get_ano_nascimento(self):
+		return self.ano_atual - self.idade
 
 
 p1 = Pessoa('João', 35)

@@ -10,14 +10,14 @@ print(x, y, *resto, '\n')
 
 
 def soma(*args):
-    print(args, type(args))
-    print(*args, '\n')
-    for numero in args:
-        print(numero)
-    print('')
-    args = list(args)
-    print(args, type(args))
-    print(*args, '\n')
+	print(args, type(args))
+	print(*args, '\n')
+	for numero in args:
+		print(numero)
+	print('')
+	args = list(args)
+	print(args, type(args))
+	print(*args, '\n')
 
 
 soma(1, 2, 3, 4, 5, 6)

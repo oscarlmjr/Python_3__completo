@@ -10,5 +10,5 @@ iteratador = iter(texto)  # iterator
 
 
 for letra in texto:
-    print(letra)
-    
+	print(letra)
+	

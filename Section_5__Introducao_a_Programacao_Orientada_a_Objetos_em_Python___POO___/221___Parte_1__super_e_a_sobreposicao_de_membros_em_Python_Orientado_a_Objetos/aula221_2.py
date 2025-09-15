@@ -10,9 +10,9 @@
 #   -> sub class, child class, derived class
 
 class MinhaString(str):
-    def upper(self):
-        print('CHAMOU UPPER')
-        return super().upper()
+	def upper(self):
+		print('CHAMOU UPPER')
+		return super().upper()
 
 
 string = MinhaString('Luiz')

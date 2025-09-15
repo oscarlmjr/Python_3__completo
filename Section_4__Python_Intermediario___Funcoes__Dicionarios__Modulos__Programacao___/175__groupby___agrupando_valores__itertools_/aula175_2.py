@@ -7,8 +7,8 @@ grupos = groupby(alunos)
 
 
 for chave, grupo in grupos:
-    print(chave)
-    print(list(grupo))
+	print(chave)
+	print(list(grupo))
 print()
 
 
@@ -17,5 +17,5 @@ grupos = groupby((alunos))
 
 
 for chave, grupo in grupos:
-    print(chave)
-    print(list(grupo))
+	print(chave)
+	print(list(grupo))

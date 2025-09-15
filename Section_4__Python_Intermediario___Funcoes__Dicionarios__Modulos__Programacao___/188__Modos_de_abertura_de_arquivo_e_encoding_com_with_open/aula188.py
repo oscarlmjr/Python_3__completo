@@ -28,7 +28,7 @@ caminho_arquivo = 'D:\\Desenvolvimento\\curso_python\\secao_4\\188__Modos_de_abe
 caminho_arquivo += 'aula188.txt'
 
 with open(caminho_arquivo, 'w') as arquivo:   # w apaga tudo anteriormente escrito
-    arquivo.write('Linha 1\n')
-    arquivo.write('Linha 2\n')
-    arquivo.writelines(('Linha 3\n', 'Linha 4\n'))
-    print('Lendo')
+	arquivo.write('Linha 1\n')
+	arquivo.write('Linha 2\n')
+	arquivo.writelines(('Linha 3\n', 'Linha 4\n'))
+	print('Lendo')

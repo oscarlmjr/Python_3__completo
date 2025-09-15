@@ -2,9 +2,9 @@
 # Hard coded - Algo escrito diretamente no código
 
 class Carro:
-    
-    def __init__(self, nome):
-        self.nome = nome
+	
+	def __init__(self, nome):
+		self.nome = nome
 
 
 fusca = Carro('Fusca')

@@ -3,12 +3,12 @@ Funções (def) em Python - *args **kwargs - (Parte 3)
 """
 
 def func(*args, **kwargs):
-    print(args)
+	print(args)
 
-    nome = kwargs.get('nome')
-    idade = kwargs.get('idade')
-    print(nome)
-    print(idade)
+	nome = kwargs.get('nome')
+	idade = kwargs.get('idade')
+	print(nome)
+	print(idade)
 
 lista = [1, 2, 3, 4, 5]
 lista2 = [10, 20, 30, 40, 50]

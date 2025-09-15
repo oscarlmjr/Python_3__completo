@@ -8,20 +8,20 @@
 #  🐍🤓🤯🤯🤯🤯
 
 class Caneta:
-    def __init__(self, cor):
-        # _private protected public
-        self._cor = cor
-        print(self._cor)
+	def __init__(self, cor):
+		# _private protected public
+		self._cor = cor
+		print(self._cor)
 
-    @property
-    def cor(self):
-        print('PROPERTY')
-        return self._cor
+	@property
+	def cor(self):
+		print('PROPERTY')
+		return self._cor
 
-    @cor.setter
-    def cor(self, valor):
-        print('ESTOU NO SETTER', valor)
-        self._cor = valor
+	@cor.setter
+	def cor(self, valor):
+		print('ESTOU NO SETTER', valor)
+		self._cor = valor
 
 
 caneta = Caneta('Azul')

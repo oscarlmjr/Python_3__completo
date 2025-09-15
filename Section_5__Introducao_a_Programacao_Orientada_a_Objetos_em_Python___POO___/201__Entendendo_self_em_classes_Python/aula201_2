@@ -5,11 +5,11 @@
 # Na classe o self é a própria instância.
 
 class Carro:
-    def __init__(abc, nome):   # self - convenção (referencia a própria instância)
-        abc.nome = nome
+	def __init__(abc, nome):   # self - convenção (referencia a própria instância)
+		abc.nome = nome
 
-    def acelerar(efg):
-        print(f'{efg.nome} está acelerando...')
+	def acelerar(efg):
+		print(f'{efg.nome} está acelerando...')
 
 
 string = 'Luiz'

@@ -7,9 +7,9 @@ e retornar um valor específico.
 Por padrão, funções Python retornam None (nada).
 '''
 def Python():
-    print('várias')
-    print('várias')
-    print('várias')
+	print('várias')
+	print('várias')
+	print('várias')
 
 
 Python()

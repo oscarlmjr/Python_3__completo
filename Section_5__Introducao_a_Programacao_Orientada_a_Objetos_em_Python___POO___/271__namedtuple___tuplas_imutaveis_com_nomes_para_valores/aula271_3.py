@@ -11,8 +11,8 @@ from typing import NamedTuple
 
 
 class Carta(NamedTuple):
-    valor: str = 'VALOR'
-    naipe: str = 'NAIPE'
+	valor: str = 'VALOR'
+	naipe: str = 'NAIPE'
 
 as_espadas = Carta('A')
 
@@ -28,4 +28,4 @@ print(as_espadas._field_defaults)
 
 print()
 for valor in as_espadas:
-    print(valor)
+	print(valor)

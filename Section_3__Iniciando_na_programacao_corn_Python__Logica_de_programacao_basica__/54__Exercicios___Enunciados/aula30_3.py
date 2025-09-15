@@ -8,8 +8,8 @@ nome = input('Digite seu primeiro nome: ')
 quant_nome = len(nome)
 
 if quant_nome <= 4:
-    print('Seu nome é curto.')
+	print('Seu nome é curto.')
 elif quant_nome <= 6:
-    print('Seu nome é normal.')
+	print('Seu nome é normal.')
 else:
-    print('Seu nome é muito grande.')
+	print('Seu nome é muito grande.')

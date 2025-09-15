@@ -2,7 +2,7 @@
 pessoa = {'nome': 'Aline', 'sobrenome': 'Souza'}
 
 for chave, valor in pessoa.items():
-    print(chave, valor)
+	print(chave, valor)
 
 print()
 

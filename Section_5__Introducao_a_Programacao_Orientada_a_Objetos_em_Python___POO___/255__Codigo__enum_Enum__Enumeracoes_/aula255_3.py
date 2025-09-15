@@ -7,10 +7,10 @@ print(Direcoes(1).name, Direcoes.ESQUERDA.value)
 
 
 def mover(direcao):
-    if not isinstance(direcao, Direcoes):
-        raise ValueError('Direção não encontrada')
-        
-    print(f'Movendo para {direcao}')
+	if not isinstance(direcao, Direcoes):
+		raise ValueError('Direção não encontrada')
+		
+	print(f'Movendo para {direcao}')
 
 
 mover(Direcoes.ESQUERDA)

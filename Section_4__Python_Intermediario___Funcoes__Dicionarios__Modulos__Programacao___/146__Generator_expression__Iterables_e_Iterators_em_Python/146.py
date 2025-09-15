@@ -8,7 +8,7 @@ generator = (n for n in range(1000000))   # tupla gera um generator
 print(generator, type(generator), '\n')
 
 # for n in generator:   # desencapsula
-#     print(n)
+#	 print(n)
 
 print(sys.getsizeof(lista))   # em bytes
 print(sys.getsizeof(generator), '\n')

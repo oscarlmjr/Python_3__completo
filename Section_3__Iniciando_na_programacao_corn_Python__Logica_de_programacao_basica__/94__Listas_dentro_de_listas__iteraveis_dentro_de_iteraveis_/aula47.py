@@ -12,5 +12,5 @@ for / while
 """
 cont = 0
 while cont <= 8:
-    print(cont, 10 - cont)
-    cont += 1
+	print(cont, 10 - cont)
+	cont += 1

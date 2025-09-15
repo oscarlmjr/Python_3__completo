@@ -11,7 +11,7 @@
 
 
 def soma(a, b, *args):
-    print(a + b, args)
+	print(a + b, args)
 
 
 soma(1, 2, 'qualquer', 'coisa')

@@ -4,15 +4,15 @@
 # parâmetro, receberemos a própria classe.
 
 class Pessoa:
-    ano = 2023   # atributo de classe
+	ano = 2023   # atributo de classe
 
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
+	def __init__(self, nome, idade):
+		self.nome = nome
+		self.idade = idade
 
 
-    def metodo_de_classe(self):
-        print('Hey')
+	def metodo_de_classe(self):
+		print('Hey')
 
 print(Pessoa.ano)
 

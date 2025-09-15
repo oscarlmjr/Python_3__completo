@@ -10,25 +10,25 @@
 #   -> sub class, child class, derived class
 
 class A:
-    atributo_a = 'valor a'
-    # print('super(B)')
-    def metodo(self):
-        print('A')
+	atributo_a = 'valor a'
+	# print('super(B)')
+	def metodo(self):
+		print('A')
 
 class B(A):
-    atributo_b = 'valor b'
-    def metodo(self):
-        print('B')
+	atributo_b = 'valor b'
+	def metodo(self):
+		print('B')
 
 class C(B):
-    atributo_c = 'valor c'
-    def metodo(self):
-        super().metodo()
-        print()
-        # super(B).metodo()   # AttributeError: 'super' object has no attribute 'metodo'
-        super(B, self).metodo()
-        super(C, self).metodo()
-        print('C')
+	atributo_c = 'valor c'
+	def metodo(self):
+		super().metodo()
+		print()
+		# super(B).metodo()   # AttributeError: 'super' object has no attribute 'metodo'
+		super(B, self).metodo()
+		super(C, self).metodo()
+		print('C')
 
 c = C()
 print(C.atributo_a)

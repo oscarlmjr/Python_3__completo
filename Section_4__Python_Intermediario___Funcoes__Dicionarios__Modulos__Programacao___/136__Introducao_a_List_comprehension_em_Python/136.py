@@ -10,7 +10,7 @@ print(lista, '\n')
 lista = []
 
 for numero in range(10):
-    lista.append(numero)
+	lista.append(numero)
 
 print(lista, '\n')
 

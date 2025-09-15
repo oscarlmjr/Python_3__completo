@@ -24,4 +24,4 @@ print(3 in s1, '\n')
 s1 = {1, 2, 3}
 
 for s in s1:
-    print(s)
+	print(s)

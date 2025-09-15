@@ -10,8 +10,8 @@ CAMINHO_ARQUIVO = 'aula206.json'
 
 class SiteQat():
 
-    def __init__(self, site):
-        self.site = site
+	def __init__(self, site):
+		self.site = site
 
 # dados = {'site': 'qat.com'}
 # q1 = Qat(**dados)
@@ -25,8 +25,8 @@ bd = [q1.__dict__]
 
 def fazer_dump():
 
-    with open(CAMINHO_ARQUIVO, 'w+', encoding='utf8') as arquivo:
-        json.dump(bd, arquivo, ensure_ascii=False, indent=2)
+	with open(CAMINHO_ARQUIVO, 'w+', encoding='utf8') as arquivo:
+		json.dump(bd, arquivo, ensure_ascii=False, indent=2)
 
 if __name__ == '__main__':
-    fazer_dump()
+	fazer_dump()

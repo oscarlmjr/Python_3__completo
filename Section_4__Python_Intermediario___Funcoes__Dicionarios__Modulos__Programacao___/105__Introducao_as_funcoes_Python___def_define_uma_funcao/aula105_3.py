@@ -7,7 +7,7 @@ e retornar um valor específico.
 Por padrão, funções Python retornam None (nada).
 '''
 def saudacao(nome='Sem nome'):
-    print(f'Olá, {nome}')
+	print(f'Olá, {nome}')
 
 
 saudacao('Luiz Otávio')

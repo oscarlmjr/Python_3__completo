@@ -1,12 +1,12 @@
 # Variáveis livres + nonlocal (locals, globals)
 
 def fora(x):
-    a = x   # variável livre
+	a = x   # variável livre
 
-    def dentro():
-        return a
+	def dentro():
+		return a
 
-    return dentro
+	return dentro
 
 dentro1 = fora(10)
 dentro2 = fora(20)

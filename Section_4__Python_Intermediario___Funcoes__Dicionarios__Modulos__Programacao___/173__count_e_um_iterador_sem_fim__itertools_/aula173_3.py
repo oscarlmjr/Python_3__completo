@@ -9,7 +9,7 @@ print(next(c1), '\n')
 
 
 for r in r1:
-    print(r)
+	print(r)
 
 print('')
 

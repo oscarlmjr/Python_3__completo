@@ -8,20 +8,20 @@ from abc import ABC
 
 
 class AbstractFoo(ABC):
-    def __init__(self, name):
-        self.name = name
+	def __init__(self, name):
+		self.name = name
 
-    @property   # getter   # a @property pertence a class
-    def name(self): ...
+	@property   # getter   # a @property pertence a class
+	def name(self): ...
 
-    @name.setter
-    def name(self, name): ...
+	@name.setter
+	def name(self, name): ...
 
 
 class Foo(AbstractFoo):
-    def __init__(self, name):
-        super().__init__(name)
-        print('Sou inútil')
+	def __init__(self, name):
+		super().__init__(name)
+		print('Sou inútil')
 
 
 foo = Foo('Bar')

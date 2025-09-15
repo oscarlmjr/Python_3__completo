@@ -12,7 +12,7 @@ print(range(10))
 print(range(10, 15), '\n')
 
 for r in r1:
-    print(r)
+	print(r)
 
 print('')
 

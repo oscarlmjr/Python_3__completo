@@ -13,12 +13,12 @@
 # Código cliente - é o código que usa seu código
 
 class Caneta:
-    def __init__(self, outra_cor):
-        self.cor_tinta = outra_cor
+	def __init__(self, outra_cor):
+		self.cor_tinta = outra_cor
 
-    @property
-    def cor(self):
-        return 'QUALQUER COISA'
+	@property
+	def cor(self):
+		return 'QUALQUER COISA'
 
 
 caneta = Caneta('Azul')

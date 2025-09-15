@@ -11,4 +11,4 @@ for / while
 8 2
 """
 for p, r in enumerate(range(10, 1, -1)):
-    print(p, r)
+	print(p, r)

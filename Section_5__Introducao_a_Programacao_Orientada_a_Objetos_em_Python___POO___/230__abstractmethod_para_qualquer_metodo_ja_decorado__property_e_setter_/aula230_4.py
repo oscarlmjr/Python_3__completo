@@ -8,28 +8,28 @@ from abc import ABC, abstractmethod
 
 
 class AbstractFoo(ABC):
-    def __init__(self, name):
-        self._name = None
-        self.name = name
-        print(__class__.__name__)
+	def __init__(self, name):
+		self._name = None
+		self.name = name
+		print(__class__.__name__)
 
-    @property   # getter   # a @property pertence a class
-    @abstractmethod
-    def name(self): ...
+	@property   # getter   # a @property pertence a class
+	@abstractmethod
+	def name(self): ...
 
 
 class Foo(AbstractFoo):
-    def __init__(self, name):
-        print(__class__.__name__)
-        super().__init__(name)
+	def __init__(self, name):
+		print(__class__.__name__)
+		super().__init__(name)
 
-    @property
-    def name(self):
-        return self._name
+	@property
+	def name(self):
+		return self._name
 
-    @name.setter
-    def name(self, name):
-        self._name = name
+	@name.setter
+	def name(self, name):
+		self._name = name
 
 
 foo = Foo('Bar')

@@ -10,21 +10,21 @@
 #   -> sub class, child class, derived class
 
 class A:
-    atributo_a = 'valor a'
-    def metodo(self):
-        print('A')
+	atributo_a = 'valor a'
+	def metodo(self):
+		print('A')
 
 
 class B(A):
-    atributo_b = 'valor b'
-    def metodo(self):
-        print('B')
+	atributo_b = 'valor b'
+	def metodo(self):
+		print('B')
 
 
 class C(B):
-    atributo_c = 'valor c'
-    def metodo(self):
-        print('C')
+	atributo_c = 'valor c'
+	def metodo(self):
+		print('C')
 
 
 print(C.mro())

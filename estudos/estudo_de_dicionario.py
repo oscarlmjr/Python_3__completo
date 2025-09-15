@@ -2,12 +2,12 @@ import copy
 
 
 lista_pessoas_2 = [[{
-    "Oscar": {
-        "nome": "Oscar",
-        "idade": 45,
-        "tipo_pessoa": "Pessoa Física",
-        "numero": 768286,
-        "tipo_conta": "Conta Corrente"}}], []]
+	"Oscar": {
+		"nome": "Oscar",
+		"idade": 45,
+		"tipo_pessoa": "Pessoa Física",
+		"numero": 768286,
+		"tipo_conta": "Conta Corrente"}}], []]
 
 print(lista_pessoas_2)
 print()
@@ -25,12 +25,12 @@ print(lista_pessoas_2)
 ############################
 
 # lista_pessoas_2 = {
-#     "Oscar": {
-#         "nome": "Oscar",
-#         "idade": 45,
-#         "tipo_pessoa": "Pessoa Física",
-#         "numero": 768286,
-#         "tipo_conta": "Conta Corrente"}}
+#	 "Oscar": {
+#		 "nome": "Oscar",
+#		 "idade": 45,
+#		 "tipo_pessoa": "Pessoa Física",
+#		 "numero": 768286,
+#		 "tipo_conta": "Conta Corrente"}}
 
 # print(lista_pessoas_2)
 # print()
@@ -61,11 +61,11 @@ print(lista_pessoas_2)
 
 
 # lista_2 = {
-#         "nome": "Oscar",
-#         "idade": 45,
-#         "tipo_pessoa": "Pessoa Física",
-#         "numero": 768286,
-#         }
+#		 "nome": "Oscar",
+#		 "idade": 45,
+#		 "tipo_pessoa": "Pessoa Física",
+#		 "numero": 768286,
+#		 }
 
 # lista.update(lista_2)
 # print(lista)
@@ -75,17 +75,17 @@ print(lista_pessoas_2)
 
 # class Dicionario():
 
-#     def __init__(self, dicionario):
-#         self.dicionario = dicionario
+#	 def __init__(self, dicionario):
+#		 self.dicionario = dicionario
 
-#         print(f'{dicionario.keys()}')
-#         print(f'{dicionario.values()}')
-#         print(f'{dicionario.items()}')
-#         print()
-#         print(f'{self.__dict__}')
-#         print(f'{self.__dict__.keys()}')
-#         print(f'{self.__dict__.values()}')
-#         print(f'{self.__dict__.items()}')
+#		 print(f'{dicionario.keys()}')
+#		 print(f'{dicionario.values()}')
+#		 print(f'{dicionario.items()}')
+#		 print()
+#		 print(f'{self.__dict__}')
+#		 print(f'{self.__dict__.keys()}')
+#		 print(f'{self.__dict__.values()}')
+#		 print(f'{self.__dict__.items()}')
 
 
 # dicionario = {'nome': 'oscar', 'idade': 45}
@@ -96,18 +96,18 @@ print(lista_pessoas_2)
 
 # class Dicionario():
 
-#     def __init__(self):
-        # dicionario = {'nome': 'oscar', 'idade': 45}
-        
-#         print(f'{dicionario}')
-#         print(f'{dicionario.keys()}')
-        # print(f'{dicionario.values()}')
-        # print(f'{dicionario.items()}')
-        # print()
-        # print(f'{self.__dict__}')
-        # print(f'{self.__dict__.keys()}')
-        # print(f'{self.__dict__.values()}')
-        # print(f'{self.__dict__.items()}')
+#	 def __init__(self):
+		# dicionario = {'nome': 'oscar', 'idade': 45}
+		
+#		 print(f'{dicionario}')
+#		 print(f'{dicionario.keys()}')
+		# print(f'{dicionario.values()}')
+		# print(f'{dicionario.items()}')
+		# print()
+		# print(f'{self.__dict__}')
+		# print(f'{self.__dict__.keys()}')
+		# print(f'{self.__dict__.values()}')
+		# print(f'{self.__dict__.items()}')
 
 
 # Dicionario()
@@ -117,14 +117,14 @@ print(lista_pessoas_2)
 
 # class Dicionario():
 
-#     def __init__(self, nome, idade):
-#         self.nome = nome
-#         self.idade = idade
-#         self.dicionario = {'nome': self.nome, 'idade': self.idade}
+#	 def __init__(self, nome, idade):
+#		 self.nome = nome
+#		 self.idade = idade
+#		 self.dicionario = {'nome': self.nome, 'idade': self.idade}
 
-#         print(f'{self.dicionario.keys()}')
-#         print(f'{self.dicionario.values()}')
-#         print(f'{self.dicionario.items()}')
+#		 print(f'{self.dicionario.keys()}')
+#		 print(f'{self.dicionario.values()}')
+#		 print(f'{self.dicionario.items()}')
 
 
 # nome = 'oscar'
@@ -153,8 +153,8 @@ print(lista_pessoas_2)
 
 
 # lista = [[{'oscar': {'nome': 'oscar', 'idade': 45}}, 
-#     {'joão gabriel': {'nome': 'joão gabriel', 'idade': 15}}], 
-#     [{'gabriel': {'nome': 'gabriel', 'idade': 15}}]]
+#	 {'joão gabriel': {'nome': 'joão gabriel', 'idade': 15}}], 
+#	 [{'gabriel': {'nome': 'gabriel', 'idade': 15}}]]
 
 # # print(lista)
 # # print(lista[0])
@@ -167,18 +167,18 @@ print(lista_pessoas_2)
 # c = 0; l = 0
 # while True:
 
-#     for dados in lista_3[l]:
-#         print(c)
-#         if dados.get(nome) is None:
-#             c += 1
-#         else:
-#             dados.get(nome, lista[l][c][nome].update(dic))
-#             break
-#     l += 1        
-#     c = 0
-#     if l == len(lista_3):
-#         break
-        
+#	 for dados in lista_3[l]:
+#		 print(c)
+#		 if dados.get(nome) is None:
+#			 c += 1
+#		 else:
+#			 dados.get(nome, lista[l][c][nome].update(dic))
+#			 break
+#	 l += 1		
+#	 c = 0
+#	 if l == len(lista_3):
+#		 break
+		
 
 # print(lista)
 
@@ -188,8 +188,8 @@ print(lista_pessoas_2)
 # dicionario_novo = {}
 
 # for d in dicionario.items():
-#     # print(d, *d)
-#     dicionario_novo.setdefault(*d)
+#	 # print(d, *d)
+#	 dicionario_novo.setdefault(*d)
 
 # print(dicionario_novo)
 
@@ -211,9 +211,9 @@ print(lista_pessoas_2)
 ############################
 
 # lista = [
-#     {'oscar': {'nome': 'oscar', 'idade': 45}}, 
-#     {'gabriel': {'nome': 'gabriel', 'idade': 15}}
-#     ]
+#	 {'oscar': {'nome': 'oscar', 'idade': 45}}, 
+#	 {'gabriel': {'nome': 'gabriel', 'idade': 15}}
+#	 ]
 
 # print(lista)
 # print(lista[0])
@@ -231,8 +231,8 @@ print(lista_pessoas_2)
 # print(dicionario.get('nome', 'nome'))
 
 # if dicionario.get('nome', 'nome') == 'oscar':
-#     print(dicionario['nome'])
-#     ...
+#	 print(dicionario['nome'])
+#	 ...
 
 
 ############################
@@ -271,27 +271,27 @@ print(lista_pessoas_2)
  
 
 # perguntas = [
-#     {
-#         'Pergunta': 'Quanto é 2+2?',
-#         'Opções': ['1', '3', '4', '5'],
-#         'Resposta': '4',
-#     },
-#     {
-#         'Pergunta': 'Quanto é 5*5?',
-#         'Opções': ['25', '55', '10', '51'],
-#         'Resposta': '25',
-#     },
-#     {
-#         'Pergunta': 'Quanto é 10/2?',
-#         'Opções': ['4', '5', '2', '1'],
-#         'Resposta': '5',
-#     },
+#	 {
+#		 'Pergunta': 'Quanto é 2+2?',
+#		 'Opções': ['1', '3', '4', '5'],
+#		 'Resposta': '4',
+#	 },
+#	 {
+#		 'Pergunta': 'Quanto é 5*5?',
+#		 'Opções': ['25', '55', '10', '51'],
+#		 'Resposta': '25',
+#	 },
+#	 {
+#		 'Pergunta': 'Quanto é 10/2?',
+#		 'Opções': ['4', '5', '2', '1'],
+#		 'Resposta': '5',
+#	 },
 # ]
 
 # print(len(perguntas))
 
 # for n in perguntas[1]['Opções']:
-#     print(n)
+#	 print(n)
 # print(n for n in perguntas[1]['Opções'])
 
 
@@ -306,7 +306,7 @@ print(lista_pessoas_2)
 # # print(*dicionario)
 
 # for n in dicionario:
-#     print(n['nome'])
+#	 print(n['nome'])
 
 # print(list(*dicionario))
 # print(list(dicionario))
@@ -327,7 +327,7 @@ print(lista_pessoas_2)
 # print(dicionario['nome'])
 
 # for n in dicionario:
-#     print(n, dicionario[n])
+#	 print(n, dicionario[n])
 
 
 # print(dicionario[0])   # só na dicionario
@@ -337,11 +337,11 @@ print(lista_pessoas_2)
 #
 #
 # for n in dicionario.items():
-#     print(n)
+#	 print(n)
 
 # dicionario = {
-#     {"nome": "oscar", "sobrenome": "mendes"},
-#     {"nom": "joão", "sobren": "jose"}
+#	 {"nome": "oscar", "sobrenome": "mendes"},
+#	 {"nom": "joão", "sobren": "jose"}
 # }   # TypeError: unhashable type: 'dict'
 # 
 # print(dicionario)

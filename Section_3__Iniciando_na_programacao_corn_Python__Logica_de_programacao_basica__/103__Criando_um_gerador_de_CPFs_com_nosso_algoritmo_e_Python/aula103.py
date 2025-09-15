@@ -16,9 +16,9 @@ Multiplicar o resultado anterior por 10
 Obter o resto da divisão da conta anterior por 11
 3630 % 11 = 0
 Se o resultado anterior for maior que 9:
-    resultado é 0
+	resultado é 0
 contrário disso:
-    resultado é o valor da conta
+	resultado é o valor da conta
 O segundo dígito do CPF é 0
 """
 # cpf = '36440847007'  # Esse CPF gera o primeiro dígito como 10 (0)
@@ -29,48 +29,48 @@ from random import randint
 
 # print(random.randint(0,9))
 
-while True:    
+while True:	
 
-    digitos = str(randint(100000000, 999999999))
-    b = str(digitos)
-    print(digitos)   
-    
-    if digitos == digitos[0] * len(digitos):
-        continue
+	digitos = str(randint(100000000, 999999999))
+	b = str(digitos)
+	print(digitos)   
+	
+	if digitos == digitos[0] * len(digitos):
+		continue
 
-    soma = 0
-    c = 10
+	soma = 0
+	c = 10
 
-    for n in digitos:
-        soma += int(n) * c
-        c -= 1
-        if c == 1:
-            break
+	for n in digitos:
+		soma += int(n) * c
+		c -= 1
+		if c == 1:
+			break
 
-    resultado = 0
-    soma = soma * 10
-    resultado = soma % 11
+	resultado = 0
+	soma = soma * 10
+	resultado = soma % 11
 
-    if resultado > 9:
-        resultado = 0
+	if resultado > 9:
+		resultado = 0
 
-    b += str(resultado)
-    soma = 0
-    c = 11
+	b += str(resultado)
+	soma = 0
+	c = 11
 
-    for n in digitos:
-        soma += int(n) * c
-        c -= 1
-        if c == 1:
-            break
+	for n in digitos:
+		soma += int(n) * c
+		c -= 1
+		if c == 1:
+			break
 
-    resultado2 = 0
-    soma = soma * 10
-    resultado2 = soma % 11
+	resultado2 = 0
+	soma = soma * 10
+	resultado2 = soma % 11
 
-    if resultado2 > 9:
-        resultado2 = 0
+	if resultado2 > 9:
+		resultado2 = 0
 
-    b += str(resultado2)
-    print(f'{b} é um CPF válido.', '\n')
-    continuar = input('Pressione uma tecla para continuar.')
+	b += str(resultado2)
+	print(f'{b} é um CPF válido.', '\n')
+	continuar = input('Pressione uma tecla para continuar.')

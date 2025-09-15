@@ -1,10 +1,10 @@
 class A:
 
-    def __init__(self):
-        print('Sou o init')
+	def __init__(self):
+		print('Sou o init')
 
-    def __repr__(self):
-        return f'A.__repr__'
+	def __repr__(self):
+		return f'A.__repr__'
 
 
 a = A()

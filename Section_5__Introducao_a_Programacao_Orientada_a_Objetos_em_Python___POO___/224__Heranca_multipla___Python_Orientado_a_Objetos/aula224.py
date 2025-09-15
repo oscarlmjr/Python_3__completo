@@ -12,11 +12,11 @@
 # D(B, C) - C(A) - B(A) - A
 #
 # método -> falar
-#           A
-#         /   \
-#        B     C
-#         \   /
-#           D
+#		   A
+#		 /   \
+#		B	 C
+#		 \   /
+#		   D
 #
 # Python 3 usa C3 superclass linearization
 # para gerar o mro.
@@ -28,28 +28,28 @@
 # Ou o atributo __mro__ (Dunder - Double Underscore)
 
 class A:
-    ...
+	...
 
-    def quem_sou(self):
-        print('A')
+	def quem_sou(self):
+		print('A')
 
 class B(A):
-    ...
+	...
 
-    def quem_sou(self):
-        print('B')
+	def quem_sou(self):
+		print('B')
 
 class C(A):
-    ...
+	...
 
-    def quem_sou(self):
-        print('C')
+	def quem_sou(self):
+		print('C')
 
 class D(B, C):
-    ...
+	...
 
-    def quem_sou(self):
-        print('D')
+	def quem_sou(self):
+		print('D')
 
 d = D()
 d.quem_sou()

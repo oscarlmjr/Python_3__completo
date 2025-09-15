@@ -10,24 +10,24 @@
 #   -> sub class, child class, derived class
 
 class A(object):
-    atributo_a = 'valor a'
-    def __init__(self, atributo):
-        self.atributo = atributo
+	atributo_a = 'valor a'
+	def __init__(self, atributo):
+		self.atributo = atributo
 
-    def metodo(self):
-        print('A')
+	def metodo(self):
+		print('A')
 
 
 class B(A):
-    atributo_b = 'valor b'
-    def metodo(self):
-        print('B')
+	atributo_b = 'valor b'
+	def metodo(self):
+		print('B')
 
 
 class C(B):
-    atributo_c = 'valor c'
-    def metodo(self):
-        print('C')
+	atributo_c = 'valor c'
+	def metodo(self):
+		print('C')
 
 
 c = C()   # A.__init__() missing 1 required positional argument: 'atributo'

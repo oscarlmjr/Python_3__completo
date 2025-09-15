@@ -13,13 +13,13 @@
 # Código cliente - é o código que usa seu código
 
 class Caneta:
-    def __init__(self, cor):
-        # private protected public
-        self.cor_tinta = cor
+	def __init__(self, cor):
+		# private protected public
+		self.cor_tinta = cor
 
-    def get_cor(self):
-        print('GET COR')
-        return self.cor_tinta
+	def get_cor(self):
+		print('GET COR')
+		return self.cor_tinta
 
 #######################
 

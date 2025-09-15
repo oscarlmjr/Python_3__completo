@@ -8,14 +8,14 @@
 #  🐍🤓🤯🤯🤯🤯
 
 class Caneta:
-    def __init__(self, cor):
-        # _private protected public
-        self._cor = cor
+	def __init__(self, cor):
+		# _private protected public
+		self._cor = cor
 
-    @property
-    def cor(self):
-        print('PROPERTY')
-        return self._cor
+	@property
+	def cor(self):
+		print('PROPERTY')
+		return self._cor
 
 
 caneta = Caneta('Azul')

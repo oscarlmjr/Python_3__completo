@@ -2,16 +2,16 @@
 
 
 def soma(parcela1, parcela2):
-        return parcela1 + parcela2
+		return parcela1 + parcela2
 
 def multiplicacao(multiplicando, multiplicador):
-        return multiplicando * multiplicador
+		return multiplicando * multiplicador
 
 
 def criar_funcao(funcao):
-    def executa(*args):
-        return funcao(*args)
-    return executa
+	def executa(*args):
+		return funcao(*args)
+	return executa
 
 
 

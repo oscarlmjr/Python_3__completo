@@ -6,10 +6,10 @@ novo_nome = ''
 contador = 0
 
 while contador < len(nome):
-    
-    novo_nome += '*' + nome[contador]
+	
+	novo_nome += '*' + nome[contador]
 
-    contador += 1
+	contador += 1
 
 
 print(novo_nome)

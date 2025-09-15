@@ -24,7 +24,7 @@
 # — Tim Peters (CPython Core Developer)
 # object acima
 class Foo:
-    ...
+	...
 
 
 f = Foo()

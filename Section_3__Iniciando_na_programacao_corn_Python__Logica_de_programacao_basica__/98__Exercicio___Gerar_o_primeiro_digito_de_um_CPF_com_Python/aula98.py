@@ -15,8 +15,8 @@ Multiplicar o resultado anterior por 10
 Obter o resto da divisão da conta anterior por 11
 3010 % 11 = 7
 Se o resultado anterior for maior que 9:
-    resultado é 0
+	resultado é 0
 contrário disso:
-    resultado é o valor da conta
+	resultado é o valor da conta
 O primeiro dígito do CPF é 7
 """

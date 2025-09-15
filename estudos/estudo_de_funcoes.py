@@ -1,59 +1,59 @@
 
 
 def parametros_decorador(nome):
-    print(nome, type(nome))
-    def decorador(func):
-        print(func.__name__, type(func), nome, type(nome))
+	print(nome, type(nome))
+	def decorador(func):
+		print(func.__name__, type(func), nome, type(nome))
 
-        def sua_nova_funcao(*args):
-            res = func(*args)
-            final = f'{res} {nome}'
-            return final
-        return sua_nova_funcao
-    return decorador
+		def sua_nova_funcao(*args):
+			res = func(*args)
+			final = f'{res} {nome}'
+			return final
+		return sua_nova_funcao
+	return decorador
 
 @parametros_decorador(nome='3')
 @parametros_decorador(nome='2')
 @parametros_decorador(nome='1')
 def soma(x, y):
-    return x + y
+	return x + y
 
 dez_mais_cinco = soma(10, 5)
 print(dez_mais_cinco)
 
 ############################
  
-# def decoradora(nome):    
-#     print(nome, type(nome))
-#     def decorador(func):
-#         print(func.__name__, type(func), nome, type(nome))       
-#         def aninhada(*args):
-#             print(func.__name__, *args)
-#             res = func(*args)
-#             return res
-#         return aninhada
-#     return decorador
+# def decoradora(nome):	
+#	 print(nome, type(nome))
+#	 def decorador(func):
+#		 print(func.__name__, type(func), nome, type(nome))	   
+#		 def aninhada(*args):
+#			 print(func.__name__, *args)
+#			 res = func(*args)
+#			 return res
+#		 return aninhada
+#	 return decorador
 
 # @decoradora(nome='primeiro')
 # def soma(x, y):
-#     return x + y
+#	 return x + y
 
 # dez_mais_cinco = soma(10, 5)
 # print(dez_mais_cinco)
 
 ############################
 
-# def decoradora(func):    
-#     print(func.__name__, type(func))
-#     def aninhada(*args):
-#         print(func.__name__, type(func), *args, type(args))       
-#         res = func(*args)
-#         return res
-#     return aninhada
+# def decoradora(func):	
+#	 print(func.__name__, type(func))
+#	 def aninhada(*args):
+#		 print(func.__name__, type(func), *args, type(args))	   
+#		 res = func(*args)
+#		 return res
+#	 return aninhada
 
 # @decoradora
 # def soma(x, y):
-#     return x + y
+#	 return x + y
 
 # dez_mais_cinco = soma(10, 5)
 # print(dez_mais_cinco)
@@ -61,9 +61,9 @@ print(dez_mais_cinco)
 ############################
 
 # def func():
-#     variavel = 'variável'
-#     print('a')
-#     # return variavel
+#	 variavel = 'variável'
+#	 print('a')
+#	 # return variavel
 
 
 # a = func()
@@ -78,19 +78,19 @@ print(dez_mais_cinco)
 # def variaveis(x, a=0, b=0):
 #   a, b = b, x
 #   if a == 0:
-#     a = b
+#	 a = b
 #   elif a != b:
-#     return soma(a, b)
+#	 return soma(a, b)
 #   print(a, b)
 
 # def multiplicacao(a, b):
 #   print(f'{a} * {b} = {a * b}')
   
-    
+	
 # def soma(a, b):
   
-#     print(f'{a} + {b} = {a + b}')
-#     return multiplicacao(a, b)  
+#	 print(f'{a} + {b} = {a + b}')
+#	 return multiplicacao(a, b)  
 
 # lista = [5, 2]
 
@@ -150,10 +150,10 @@ print(dez_mais_cinco)
 #   yield f'{a} + {b} = {a + b}'
 
 #   def multiplicacao(a, b, x):
-#     a, b = b, x
-#     yield from soma(x)
-#     a, b = b, x
-#     yield f'{a} * {b} = {a * b}'
+#	 a, b = b, x
+#	 yield from soma(x)
+#	 a, b = b, x
+#	 yield f'{a} * {b} = {a * b}'
 
 #   return multiplicacao(a, b, x)
 
@@ -169,12 +169,12 @@ print(dez_mais_cinco)
 ############################
 
 # def funcao(*args):
-#     print(len(args))
-#     print(*args)
-#     # print(list(*args))   # TypeError: list expected at most 1 argument, got 2
-#     print(args)
-#     print(list(args))
-#     print(list(args)[0])
+#	 print(len(args))
+#	 print(*args)
+#	 # print(list(*args))   # TypeError: list expected at most 1 argument, got 2
+#	 print(args)
+#	 print(list(args))
+#	 print(list(args)[0])
 
 
 # funcao(2, 4)
@@ -184,7 +184,7 @@ print(dez_mais_cinco)
 # def c(a, b):
 # def c(*args):
 # def c():
-#     return a + b
+#	 return a + b
 
 # a = 'a'
 # b = 'b'
@@ -198,16 +198,16 @@ print(dez_mais_cinco)
 # print(c())
 
 # def soma(x, y):
-#     return x + y
+#	 return x + y
 #
 # def multiplica(x, y):
-#     return x * y
+#	 return x * y
 #
 # def executa(funcao, *args):
-#     def interna(funcao, y):
-#         return funcao(*args, y)
+#	 def interna(funcao, y):
+#		 return funcao(*args, y)
 #
-#     return interna
+#	 return interna
 #
 # soma_com_cinco = executa(soma, 5)
 # multiplica_por_dez = executa(multiplica, 10)
@@ -218,13 +218,13 @@ print(dez_mais_cinco)
 
 # def funcao():  # Mais de 1 parâmetro = var()
 #
-#     def funcao2(par2):
+#	 def funcao2(par2):
 #
-#         print(f"var('par2') -> {par2}")
-#         print(f'var == funcao2 = {var == funcao2}')
-#         print(f'var == funcao = {var == funcao}\n')
+#		 print(f"var('par2') -> {par2}")
+#		 print(f'var == funcao2 = {var == funcao2}')
+#		 print(f'var == funcao = {var == funcao}\n')
 #
-#     return funcao2
+#	 return funcao2
 #
 # var = funcao()
 # var('par2')
@@ -232,11 +232,11 @@ print(dez_mais_cinco)
 
 # def funcao():
 #
-#     def funcao2():
+#	 def funcao2():
 #
-#         return f'return funcao2()'
+#		 return f'return funcao2()'
 #
-#     return funcao2()
+#	 return funcao2()
 #
 # var = funcao()
 # print(f"var -> {var}")
@@ -245,44 +245,44 @@ print(dez_mais_cinco)
 
 
 # def funcao():
-#     def funcao2():
-#         print('funcao2')
+#	 def funcao2():
+#		 print('funcao2')
 #
-#     return funcao2()
+#	 return funcao2()
 #
 # funcao()
 
 
 # def funcao(par2):
-#     print(par2)
+#	 print(par2)
 #
 # def funcao2(par1, par2):
-#     return par1(par2)
+#	 return par1(par2)
 #
 # funcao2(funcao, 'funcao')
 
 
 # def funcao(par2):
-#     return par2
+#	 return par2
 #
 # def funcao2(par1, par2):
-#     return par1(par2)
+#	 return par1(par2)
 #
 # def funcao3(par3):
-#     print(par3)
+#	 print(par3)
 #
 # funcao2(funcao, funcao3('funcao3'))
 
 
 # def funcao():
 #
-#     def funcao2():
+#	 def funcao2():
 #
-#         def funcao3():
-#             return 'funcao3'
+#		 def funcao3():
+#			 return 'funcao3'
 #
-#         print(funcao3())
+#		 print(funcao3())
 #
-#     funcao2()
+#	 funcao2()
 #
 # funcao()

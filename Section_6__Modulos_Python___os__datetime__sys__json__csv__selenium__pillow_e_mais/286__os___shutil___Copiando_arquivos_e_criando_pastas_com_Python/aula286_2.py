@@ -14,5 +14,5 @@ print(NOVA_PASTA)
 os.makedirs(NOVA_PASTA)
 
 for root, dirs, files in os.walk(PASTA_ORIGINAL):
-    for file in files:
-        print(file)
+	for file in files:
+		print(file)

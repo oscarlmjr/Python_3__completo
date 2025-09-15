@@ -1,10 +1,10 @@
 # Problema dos parâmetros mutáveis em funções Python
 
 def adiciona_clientes(nome, lista=None):
-    if lista is None:
-        lista = []
-    lista.append(nome)
-    return lista
+	if lista is None:
+		lista = []
+	lista.append(nome)
+	return lista
 
 cliente1 = adiciona_clientes('Luiz')
 adiciona_clientes('Joana', cliente1)

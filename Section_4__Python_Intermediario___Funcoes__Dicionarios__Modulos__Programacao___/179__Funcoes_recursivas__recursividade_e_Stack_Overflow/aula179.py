@@ -9,12 +9,12 @@
 # https://brasilescola.uol.com.br/matematica/fatorial.htm
 
 def recursiva(inicio=0, fim=10):
-    # Caso base
-    # Caso recursivo
-    # contar até chegar ao final
-    inicio += 1
-    return recursiva(inicio, fim)   # [Previous line repeated 996 more times]
-    # RecursionError: maximum recursion depth exceeded
+	# Caso base
+	# Caso recursivo
+	# contar até chegar ao final
+	inicio += 1
+	return recursiva(inicio, fim)   # [Previous line repeated 996 more times]
+	# RecursionError: maximum recursion depth exceeded
 
 
 print(recursiva())

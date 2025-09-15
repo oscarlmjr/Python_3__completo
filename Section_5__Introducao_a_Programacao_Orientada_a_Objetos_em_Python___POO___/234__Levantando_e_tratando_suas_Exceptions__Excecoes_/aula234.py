@@ -8,11 +8,11 @@
 # Relançando exceções
 # Adicionando notas em exceções (3.11.0)
 class MeuError(Exception):
-    ...
+	...
 
 
 def levantar():
-    raise MeuError('A mensagem do meu erro')
+	raise MeuError('A mensagem do meu erro')
 
 
 levantar()

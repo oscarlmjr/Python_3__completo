@@ -3,9 +3,9 @@
 # o número recebido como parâmetro.
 
 def criar_multiplicador(multiplicador):
-    def multiplicar(numero):
-        return numero * multiplicador
-    return multiplicar
+	def multiplicar(numero):
+		return numero * multiplicador
+	return multiplicar
 
 duplicar = criar_multiplicador(2)
 triplicar = criar_multiplicador(3)

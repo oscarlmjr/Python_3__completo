@@ -3,7 +3,7 @@ conjunto = set()
 print(conjunto, type(conjunto))
 print()
 
-# conjunto = {{"a": "a"}, ['b', 'c'], 1, 2, 3, True, None,}    # TypeError: 
+# conjunto = {{"a": "a"}, ['b', 'c'], 1, 2, 3, True, None,}	# TypeError: 
 # unhashable type: 'list'   # TypeError: unhashable type: 'dict'
 
 conjunto = {"a", 1, 2, 3, True, None, False}

@@ -11,7 +11,7 @@
 
 
 def soma(a, b, /, *, c, **kwargs):
-    print(a + b + c, kwargs)
+	print(a + b + c, kwargs)
 
 
 soma(1, 2, c=3, nome='teste')

@@ -1,13 +1,13 @@
 lista = [
-    ['P1', 13],
-    ['P2', 6],
-    ['P3', 7],
-    ['P4', 50],
-    ['P5', 8],
+	['P1', 13],
+	['P2', 6],
+	['P3', 7],
+	['P4', 50],
+	['P5', 8],
 ]
 
 def func(item):
-    return item[1]
+	return item[1]
 
 lista.sort(key=func)
 print(lista)

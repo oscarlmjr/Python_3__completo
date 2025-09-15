@@ -14,7 +14,7 @@ print(NOVA_PASTA)
 os.makedirs(NOVA_PASTA, exist_ok=True)
 
 for root, dirs, files in os.walk(PASTA_ORIGINAL):
-    for file in files:
-        caminho_arquivo = os.path.join(root, file)
-        print(caminho_arquivo)
-        print(file)
+	for file in files:
+		caminho_arquivo = os.path.join(root, file)
+		print(caminho_arquivo)
+		print(file)

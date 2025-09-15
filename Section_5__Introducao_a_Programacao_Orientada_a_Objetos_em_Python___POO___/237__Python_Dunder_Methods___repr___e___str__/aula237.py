@@ -16,9 +16,9 @@
 # __str__(self) - str
 # __repr__(self) - str
 class Ponto:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
 
 
 p1 = Ponto(1, 2)

@@ -2,7 +2,7 @@
 # parâmetros saudacao e nome.
 
 def saudacao(saudacao, nome):
-    print(f'{saudacao} {nome}')
+	print(f'{saudacao} {nome}')
 
 saudacao('Olá', 'Joãozinho')
 saudacao('Oi', 'Maria')

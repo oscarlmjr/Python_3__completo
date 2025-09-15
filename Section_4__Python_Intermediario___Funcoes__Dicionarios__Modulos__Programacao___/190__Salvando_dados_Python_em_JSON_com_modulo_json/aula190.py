@@ -15,4 +15,4 @@ pessoa = {"nome": "Luiz Otávio 2", "sobrenome": "Miranda",
 # null = None
 
 with open('aula190.json', 'w', encoding='utf8') as arquivo:
-    json.dump(pessoa, arquivo, ensure_ascii=False, indent=2)
+	json.dump(pessoa, arquivo, ensure_ascii=False, indent=2)

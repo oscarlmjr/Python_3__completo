@@ -10,29 +10,29 @@
 #   -> sub class, child class, derived class
 
 class A(object):
-    atributo_a = 'valor a'
-    def __init__(self, atributo):
-        print(__class__.__name__)
-        self.atributo = atributo
-    def metodo(self):
-        print('A')
+	atributo_a = 'valor a'
+	def __init__(self, atributo):
+		print(__class__.__name__)
+		self.atributo = atributo
+	def metodo(self):
+		print('A')
 
 class B(A):
-    atributo_b = 'valor b'
-    def __init__(self, atributo, outra_coisa):
-        super().__init__(atributo)
-        print(__class__.__name__)
-        self.outra_coisa = outra_coisa
-    def metodo(self):
-        print('B')
+	atributo_b = 'valor b'
+	def __init__(self, atributo, outra_coisa):
+		super().__init__(atributo)
+		print(__class__.__name__)
+		self.outra_coisa = outra_coisa
+	def metodo(self):
+		print('B')
 
 class C(B):
-    atributo_c = 'valor c'
-    def __init__(self, *args, **kwargs):
-        print('EI, burlei o sistema.')
-        super().__init__(*args, **kwargs)
-    def metodo(self):
-        print('C')
+	atributo_c = 'valor c'
+	def __init__(self, *args, **kwargs):
+		print('EI, burlei o sistema.')
+		super().__init__(*args, **kwargs)
+	def metodo(self):
+		print('C')
 
 c = C('atributo', 'qualquer')
 print(c.atributo)

@@ -3,10 +3,10 @@
 o valor da funcao2 executada.
 """
 def ola_mundo():
-    return 'Olá Mundo!'
+	return 'Olá Mundo!'
 
 def mestre(funcao):
-    return funcao()
+	return funcao()
 
 executando = mestre(ola_mundo)
 print(executando)

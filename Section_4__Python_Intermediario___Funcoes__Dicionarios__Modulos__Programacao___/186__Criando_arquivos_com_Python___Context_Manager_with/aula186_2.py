@@ -28,5 +28,5 @@ caminho_arquivo += 'aula186.txt'
 # arquivo.close()
 
 with open(caminho_arquivo, 'w') as arquivo:
-    print('Olá mundo')
-    print('Arquivo vai ser fechado')
+	print('Olá mundo')
+	print('Arquivo vai ser fechado')

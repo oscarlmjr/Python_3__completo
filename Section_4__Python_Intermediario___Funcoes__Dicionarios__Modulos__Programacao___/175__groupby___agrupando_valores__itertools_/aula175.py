@@ -10,4 +10,4 @@ print(grupos, '\n')
 
 
 for grupo in grupos:
-    print(grupo)
+	print(grupo)

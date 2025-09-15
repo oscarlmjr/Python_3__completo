@@ -15,14 +15,14 @@ pessoa = dict(nome='Luiz Otávio')
 print(pessoa, type(pessoa), '\n')
 
 pessoa = {'nome': 'Luiz Otávio', 'sobrenome': 'Miranda',
-    'idade': 18, 'altura': 1.8, 'endereços': [
-        {'rua': 'tal tal', 'número': 123},
-        {'rua': 'outra rua', 'número': 321}
-    ],
+	'idade': 18, 'altura': 1.8, 'endereços': [
+		{'rua': 'tal tal', 'número': 123},
+		{'rua': 'outra rua', 'número': 321}
+	],
 }
 
 print(pessoa, type(pessoa))
 print(pessoa['nome'], pessoa['sobrenome'], '\n')
 
 for chave in pessoa:
-    print(chave, pessoa[chave])
+	print(chave, pessoa[chave])

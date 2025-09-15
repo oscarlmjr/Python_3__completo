@@ -20,6 +20,6 @@ encontrar = input('Digite o que deseja encontrar: ')
 print()
 
 if encontrar in nome:
-    print(f'{encontrar} está em {nome}')
+	print(f'{encontrar} está em {nome}')
 else:
-    print(f'{encontrar} não está em {nome}')
+	print(f'{encontrar} não está em {nome}')

@@ -8,11 +8,11 @@
 # object é a super classe de uma classe
 class A:
 
-    def __init__(self):
-        print(self)
+	def __init__(self):
+		print(self)
 
-    def __repr__(self):
-        return f'A.__repr__'
+	def __repr__(self):
+		return f'A.__repr__'
 
 
 a = A()

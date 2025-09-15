@@ -7,9 +7,9 @@ RADAR_RANGE = 1  # A distância onde o radar pega
 
 
 if velocidade > RADAR_1:
-    print('Velocidade carro passou do radar 1')
+	print('Velocidade carro passou do radar 1')
 
 if local_carro >= (LOCAL_1 - RADAR_RANGE) and \
-    local_carro <= (LOCAL_1 + RADAR_RANGE) and \
-        velocidade > RADAR_1:
-    print('Carro multado em radar 1')
+	local_carro <= (LOCAL_1 + RADAR_RANGE) and \
+		velocidade > RADAR_1:
+	print('Carro multado em radar 1')

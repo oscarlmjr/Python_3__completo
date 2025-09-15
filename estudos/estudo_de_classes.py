@@ -27,11 +27,11 @@ import json, copy
  
 # class Pessoa:
 
-#     def __init__(self, nome):
-#         self.nome = nome
+#	 def __init__(self, nome):
+#		 self.nome = nome
 
-#     # def atividade(self):
-#     #     print(f'{self.nome}')
+#	 # def atividade(self):
+#	 #	 print(f'{self.nome}')
 
 # daniella = Pessoa('Daniella')
 # print(daniella.nome)

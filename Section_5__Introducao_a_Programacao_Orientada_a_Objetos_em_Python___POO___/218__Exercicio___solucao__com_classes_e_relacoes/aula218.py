@@ -10,34 +10,34 @@
 # abstração, polimorfismo, encapsulamento e herança
 
 class Carro:
-    def __init__(self, nome):
-        self.nome = nome
-        self._motor = None
-        self._fabricante = None
+	def __init__(self, nome):
+		self.nome = nome
+		self._motor = None
+		self._fabricante = None
 
-    @property
-    def motor(self):
-        return self._motor
+	@property
+	def motor(self):
+		return self._motor
 
-    @motor.setter
-    def motor(self, valor):
-        self._motor = valor
+	@motor.setter
+	def motor(self, valor):
+		self._motor = valor
 
-    @property
-    def fabricante(self):
-        return self._fabricante
+	@property
+	def fabricante(self):
+		return self._fabricante
 
-    @fabricante.setter
-    def fabricante(self, valor):
-        self._fabricante = valor
+	@fabricante.setter
+	def fabricante(self, valor):
+		self._fabricante = valor
 
 class Fabricante:
-    def __init__(self, nome):
-        self.nome = nome
+	def __init__(self, nome):
+		self.nome = nome
 
 class Motor:
-    def __init__(self, nome):
-        self.nome = nome
+	def __init__(self, nome):
+		self.nome = nome
 
 
 volkswagen = Fabricante('Volkswagen')

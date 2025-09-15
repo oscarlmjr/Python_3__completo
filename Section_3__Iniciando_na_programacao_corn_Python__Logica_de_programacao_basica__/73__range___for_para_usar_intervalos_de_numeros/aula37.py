@@ -7,5 +7,5 @@ Função range(start=0, stop, step=1) default
 texto = 'Python'
 c = 0
 while c < len(texto):
-    print(texto[c])
-    c += 1
+	print(texto[c])
+	c += 1

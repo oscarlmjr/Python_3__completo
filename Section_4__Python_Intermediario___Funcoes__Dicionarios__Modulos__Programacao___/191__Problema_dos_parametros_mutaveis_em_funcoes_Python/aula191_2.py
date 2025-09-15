@@ -1,8 +1,8 @@
 # Problema dos parâmetros mutáveis em funções Python
 
 def adiciona_clientes(nome, lista=[]):
-    lista.append(nome)
-    return lista
+	lista.append(nome)
+	return lista
 
 lista1 = []
 cliente1 = adiciona_clientes('Luiz', lista1)

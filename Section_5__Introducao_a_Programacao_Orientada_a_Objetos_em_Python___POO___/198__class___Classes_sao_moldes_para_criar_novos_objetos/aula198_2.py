@@ -8,7 +8,7 @@
 # CriarBaseDeDados
 
 class Pessoa:
-    ...
+	...
 
 p1 = Pessoa()
 p1.nome = 'Luiz'   # .valor após a instância = atributo

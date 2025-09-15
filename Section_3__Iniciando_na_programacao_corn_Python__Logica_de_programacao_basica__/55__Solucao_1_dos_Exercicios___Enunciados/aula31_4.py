@@ -7,11 +7,11 @@ curto"; se tiver entre 5 e 6 letras, escreva "Seu nome
 nome = input('Digite o seu primeiro nome: ')
 quant_nome = len(nome)
 if nome.isalpha() and quant_nome > 0:
-    if quant_nome <= 4:
-        print('Seu nome é curto.')
-    if 4 < quant_nome < 7:
-        print('Seu nome é normal.')
-    if quant_nome > 6:
-        print('Seu nome é muito grande.')
+	if quant_nome <= 4:
+		print('Seu nome é curto.')
+	if 4 < quant_nome < 7:
+		print('Seu nome é normal.')
+	if quant_nome > 6:
+		print('Seu nome é muito grande.')
 else:
-    print(f'"{nome}" não é nome.')
+	print(f'"{nome}" não é nome.')

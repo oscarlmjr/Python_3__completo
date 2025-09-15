@@ -5,11 +5,11 @@
 # classe.
 
 class Classe:
-    print('c1')
-    
-    @staticmethod
-    def funcao_que_esta_na_classe():
-        print('Oi')
+	print('c1')
+	
+	@staticmethod
+	def funcao_que_esta_na_classe():
+		print('Oi')
 
 
 c1 = Classe()

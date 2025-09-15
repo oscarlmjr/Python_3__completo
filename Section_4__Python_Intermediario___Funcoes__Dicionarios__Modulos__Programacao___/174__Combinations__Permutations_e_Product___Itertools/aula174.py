@@ -6,8 +6,8 @@ from itertools import combinations
 
 
 def print_iter(iterator):
-    print(*list(iterator), sep='\n')
-    print()
+	print(*list(iterator), sep='\n')
+	print()
 
 
 pessoas = ['João', 'Joana', 'Luiz', 'Letícia']

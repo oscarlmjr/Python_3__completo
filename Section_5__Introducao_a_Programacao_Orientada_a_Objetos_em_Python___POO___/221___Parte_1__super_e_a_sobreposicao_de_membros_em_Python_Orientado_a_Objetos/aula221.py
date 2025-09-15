@@ -10,7 +10,7 @@
 #   -> sub class, child class, derived class
 
 class MinhaString(str):
-    ...
+	...
 
 
 string = MinhaString('Luiz')
@@ -18,9 +18,9 @@ print(string.upper())
 
 
 class MinhaString(str):
-    def upper(self):
-        return 'ABC'
-        # super()
+	def upper(self):
+		return 'ABC'
+		# super()
 
 
 string = MinhaString('Luiz')

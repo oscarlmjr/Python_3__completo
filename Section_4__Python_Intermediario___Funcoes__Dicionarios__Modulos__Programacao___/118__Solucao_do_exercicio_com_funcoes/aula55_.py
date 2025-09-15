@@ -2,13 +2,13 @@
 # parâmetros saudacao e nome.
 
 def saudacao(saudacao, nome):
-    nome = input('Digite seu nome: ')
-    print(saudacao, nome)
+	nome = input('Digite seu nome: ')
+	print(saudacao, nome)
 
 saudacao('Olá', '')
 
 def func(saudacao, nome):
-    print(saudacao, nome)
+	print(saudacao, nome)
 
 nome = input('Digite seu nome: ')
 func('Olá,', nome)

@@ -1,17 +1,17 @@
 class MeuError(Exception):
-    ...
+	...
 
 
 def levantar():
-    exception_ = MeuError('a', 'b', 'c')
-    # exception_ = MeuError('abc')
-    raise exception_
+	exception_ = MeuError('a', 'b', 'c')
+	# exception_ = MeuError('abc')
+	raise exception_
 
 
 try:
-    levantar()
-    
+	levantar()
+	
 except MeuError as error:
-    print(error)
-    print(error.args)
-    
+	print(error)
+	print(error.args)
+	

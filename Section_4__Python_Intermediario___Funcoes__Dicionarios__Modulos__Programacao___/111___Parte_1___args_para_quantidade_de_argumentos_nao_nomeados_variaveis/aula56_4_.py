@@ -1,13 +1,13 @@
 def func(*args):
-    args = list(args)
-    print(args)
-    print(*args)
+	args = list(args)
+	print(args)
+	print(*args)
 func('12345')
 
 def func(*args):
-    args = (args)
-    print(args)
-    print(*args)
+	args = (args)
+	print(args)
+	print(*args)
 func('12345')
 
 # a = 1, 2, 3, 4, 5
@@ -15,8 +15,8 @@ func('12345')
 # a = '1', '2', '3', '4', '5'
 # b = ''
 # for n in range(len(a)):
-#     b += str(a[n])
-#     print(b)
+#	 b += str(a[n])
+#	 print(b)
 
 # a = '12345'
 # a = [a]
