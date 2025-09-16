@@ -10,15 +10,14 @@ import string
 from datetime import datetime
 from pathlib import Path
 
-CAMINHO_ARQUIVO = Path(__file__).parent / 'aula183.txt'
+
+CAMINHO_ARQUIVO = Path(__file__).parent / 'aula298.txt'
 
 locale.setlocale(locale.LC_ALL, '')
-
 
 def converte_para_brl(numero: float) -> str:
     brl = 'R$ ' + locale.currency(numero, symbol=False, grouping=True)
     return brl
-
 
 data = datetime(2022, 12, 28)
 dados = dict(
@@ -29,12 +28,11 @@ dados = dict(
     telefone='+55 (11) 7890-5432'
 )
 
-
 class MyTemplate(string.Template):
     delimiter = '%'
 
 
-with open(CAMINHO_ARQUIVO, 'r') as arquivo:
+with open(CAMINHO_ARQUIVO, 'r', encoding='utf8') as arquivo:
     texto = arquivo.read()
     template = MyTemplate(texto)
     print(template.substitute(dados))
