@@ -6,8 +6,12 @@
 # Você também pode trocar o delimitador e outras coisas criando uma subclasse
 # de template.
 import locale
+import string
 from datetime import datetime
+from pathlib import Path
 
+
+CAMINHO_ARQUIVO = Path(__file__).parent / 'aula298_3.txt'
 
 locale.setlocale(locale.LC_ALL, '')
 
@@ -25,5 +29,8 @@ dados = dict(
     telefone='+55 (11) 7890-5432'
 )
 
-import json
-print(json.dumps(dados, indent=2, ensure_ascii=False))
+
+with open(CAMINHO_ARQUIVO, 'r', encoding='utf8') as arquivo:
+    texto = arquivo.read()
+    template = string.Template(texto)
+    print(template.substitute(dados))

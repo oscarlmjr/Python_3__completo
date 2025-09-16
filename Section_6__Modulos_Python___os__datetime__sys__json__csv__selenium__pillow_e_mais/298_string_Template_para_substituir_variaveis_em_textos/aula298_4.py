@@ -6,13 +6,16 @@
 # Você também pode trocar o delimitador e outras coisas criando uma subclasse
 # de template.
 import locale
+import string
 from datetime import datetime
+from pathlib import Path
 
+
+CAMINHO_ARQUIVO = Path(__file__).parent / 'aula298_4.txt'
 
 locale.setlocale(locale.LC_ALL, '')
 
 def converte_para_brl(numero: float) -> str:
-    # brl = 'R$ ' + locale.currency(numero, symbol=False, grouping=True)
     brl = locale.currency(numero, grouping=True)
     return brl
 
@@ -25,5 +28,11 @@ dados = dict(
     telefone='+55 (11) 7890-5432'
 )
 
-import json
-print(json.dumps(dados, indent=2, ensure_ascii=False))
+class MyTemplate(string.Template):
+    delimiter = '%'
+
+
+with open(CAMINHO_ARQUIVO, 'r', encoding='utf8') as arquivo:
+    texto = arquivo.read()
+    template = MyTemplate(texto)
+    print(template.substitute(dados))
