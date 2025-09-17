@@ -6,7 +6,9 @@
 	"prettier.tabWidth": 7,
 	"editor.minimap.enabled": false,
 	"editor.wordWrapColumn": 113,
-	"editor.rulers": [],
+	"editor.rulers": [
+		80, 120
+	],
 	"editor.renderWhitespace": "all",
 	"python.createEnvironment.trigger": "off",
 	"window.zoomPerWindow": false,
