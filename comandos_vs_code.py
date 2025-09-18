@@ -11,3 +11,9 @@
 # Adiconar cursor à seleção: Ctrl + Shift + l
 # Replace: Ctrl + h
 # Emoji Windows + .
+# sessão de API web, como FastAPI, use Ctrl+C para enviar um sinal de interrupção ao processo.
+
+# Para "encerrar" uma sessão de API no PowerShell, o método correto depende do con
+# texto: para sair de uma sessão interativa do PowerShell, use Exit-PSSession ou a
+# palavra-chave exit; para parar um processo que está executando uma API, use 
+# Stop-Process.
