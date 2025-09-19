@@ -12,6 +12,7 @@ print = pprint
 mimetypes = MimeTypes()
 
 nome_arquivo = 'python_logo.png'
+# nome_arquivo = 'consumir_api\\python_logo.png'
 mimetype_arquivo = mimetypes.guess_type(nome_arquivo)[0]
 print(mimetype_arquivo)
 
@@ -28,7 +29,7 @@ headers = {
 }
 
 
-response = requests.post(url=url, headers=headers, data=)
+response = requests.post(url=url, headers=headers, data=multipart)
 
 if response.status_code >= 200 and response.status_code <= 299:
 	# Sucesso
