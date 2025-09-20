@@ -43,7 +43,7 @@ def make_chrome_browser(*options: str) -> webdriver.Chrome:
 
 
 if __name__ == '__main__':
-    TIME_TO_WAIT = 50
+    TIME_TO_WAIT = 40
 
     # Example
     # options = '--headless', '--disable-gpu',
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     browser = make_chrome_browser(*options)
 
     # Como antes
-    browser.get('https://www.google.com')
+    browser.get('https://duckduckgo.com/')
 
     # Espere para encontrar o input
     search_input = WebDriverWait(browser, TIME_TO_WAIT).until(
@@ -62,10 +62,11 @@ if __name__ == '__main__':
     search_input.send_keys('Hello World!')
     search_input.send_keys(Keys.ENTER)
 
-    results = browser.find_element(By.ID, 'search')
-    # results = browser.find_element(By.ID, 'before-appbar')
-    print(results)
-    # links = results.find_elements(By.TAG_NAME, 'a')
+    results = browser.find_element(By.ID, 'react-layout')
+    print()
+    print(results, '\n')
+    links = results.find_elements(By.TAG_NAME, 'a')
+    print(links[0], '\n')
     # links[0].click()
 
     # Dorme por 10 segundos
