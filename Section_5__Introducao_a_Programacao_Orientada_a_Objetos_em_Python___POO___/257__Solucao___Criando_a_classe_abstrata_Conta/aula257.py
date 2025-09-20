@@ -72,9 +72,9 @@ class Banco:
 					]
 
 		for cliente_cadastrado in lista_banco:
-			if cliente_cadastrado['_nome'] in cliente_cadastro['_nome']:
-				if cliente_cadastrado['agencia'] in cliente_cadastro['agencia']:
-					if cliente_cadastrado['numero_conta'] in cliente_cadastro['numero_conta']:
+			if cliente_cadastrado['_nome'] in cliente_cadastro['_nome']:  # type: ignore
+				if cliente_cadastrado['agencia'] in cliente_cadastro['agencia']:  # type: ignore
+					if cliente_cadastrado['numero_conta'] in cliente_cadastro['numero_conta']:  # type: ignore
 						print('Cliente autenticado')
 						print(f'depósito: R$',deposito)
 						print(cliente.conta())
