@@ -30,6 +30,7 @@ if __name__ == '__main__':
 
     # Grid
     buttonsGrid = ButtonsGrid()
+    # buttonsGrid._makeGrid()
     window.vLayout.addLayout(buttonsGrid)
 
     # Executa tudo
