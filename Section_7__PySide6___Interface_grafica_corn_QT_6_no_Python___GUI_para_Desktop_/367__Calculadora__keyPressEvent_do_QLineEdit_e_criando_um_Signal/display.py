@@ -29,6 +29,7 @@ class Display(QLineEdit):
 		isEnter = key in [KEYS.Key_Enter, KEYS.Key_Return]
 
 		# if key == '':
+		# # if key == KEYS.Key_Enter:
 		if isEnter:
 			print('Enter pressionado, sinal emitido', type(self).__name__)
 			self.eqRequested.emit()
