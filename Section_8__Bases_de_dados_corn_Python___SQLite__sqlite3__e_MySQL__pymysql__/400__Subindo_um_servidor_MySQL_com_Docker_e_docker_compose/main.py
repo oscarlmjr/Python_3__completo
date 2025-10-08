@@ -36,15 +36,6 @@ with connection:
 		# Começo a manipular dados a partir daqui
 
 	with connection.cursor() as cursor:
-		# cursor.execute(
-		# 	f'INSERT INTO {TABLE_NAME} '
-		# 	'(nome, idade) VALUES ("Luiz", 25) '
-		# )
-		# cursor.execute(
-		# 	f'INSERT INTO {TABLE_NAME} '
-		# 	'(nome, idade) VALUES ("Luiz", 25) '
-		# )
-		# result = cursor.execute(
 		sql = (
 			f'INSERT INTO {TABLE_NAME} '
 			# '(nome, idade) VALUES ("Luiz", 25) '
@@ -53,9 +44,58 @@ with connection:
 			'(%s, %s) '
 		)
 		data = ('Luiz', 18)
-		result = cursor.execute(sql, data)  # type: ignore
-		# result = cursor.execute(sql, ('Luiz', 18))  # type: ignore
-		# print(sql)
-		print(sql, data)
+		result = cursor.execute(sql, data)
+	connection.commit()
+
+	with connection.cursor() as cursor:
+		sql = (
+			f'INSERT INTO {TABLE_NAME} '
+			'(nome, idade) '
+			'VALUES '
+			'(%(name)s, %(age)s) '
+		)
+		data2 = {
+			"age": 37,
+			"name": "Le",
+		}
+		result = cursor.execute(sql, data2)
+
+		        # print(sql)
+        # print(data2)
+        # print(result)
+	# connection.commit()
+
+	# with connection.cursor() as cursor:
+	# 	sql = (
+	# 		f'INSERT INTO {TABLE_NAME} '
+	# 		'(nome, idade) '
+	# 		'VALUES '
+	# 		'(%(name)s, %(age)s) '
+	# 	)
+	# 	data3 = (
+	# 		{"name": "Sah", "age": 33, },
+	# 		{"name": "Júlia", "age": 74, },
+	# 		{"name": "Rose", "age": 53, },
+	# 	)
+	# 	result = cursor.executemany(sql, data3)  # type: ignore
+	# 	# print(sql)
+	# 	# print(data3)
+	# 	# print(result)
+	# connection.commit()
+
+	# with connection.cursor() as cursor:
+	# 	sql = (
+	# 		f'INSERT INTO {TABLE_NAME} '
+	# 		'(nome, idade) '
+	# 		'VALUES '
+	# 		'(%s, %s) '
+	# 	)
+	# 	data4 = (
+	# 		("Siri", 22, ),
+	# 		("Helena", 15, ),
+	# 	)
+	# 	result = cursor.executemany(sql, data4)  # type: ignore
+		print(sql)
+		print(data2)
 		print(result)
 	connection.commit()
