@@ -36,17 +36,26 @@ with connection:
 		# Começo a manipular dados a partir daqui
 
 	with connection.cursor() as cursor:
-		cursor.execute(
+		# cursor.execute(
+		# 	f'INSERT INTO {TABLE_NAME} '
+		# 	'(nome, idade) VALUES ("Luiz", 25) '
+		# )
+		# cursor.execute(
+		# 	f'INSERT INTO {TABLE_NAME} '
+		# 	'(nome, idade) VALUES ("Luiz", 25) '
+		# )
+		# result = cursor.execute(
+		sql = (
 			f'INSERT INTO {TABLE_NAME} '
-			'(nome, idade) VALUES ("Luiz", 25) '
+			# '(nome, idade) VALUES ("Luiz", 25) '
+			'(nome, idade) '
+			'VALUES '
+			'(%s, %s) '
 		)
-		cursor.execute(
-			f'INSERT INTO {TABLE_NAME} '
-			'(nome, idade) VALUES ("Luiz", 25) '
-		)
-		result = cursor.execute(
-			f'INSERT INTO {TABLE_NAME} '
-			'(nome, idade) VALUES ("Luiz", 25) '
-		)
+		data = ('Luiz', 18)
+		result = cursor.execute(sql, data)  # type: ignore
+		# result = cursor.execute(sql, ('Luiz', 18))  # type: ignore
+		# print(sql)
+		print(sql, data)
 		print(result)
 	connection.commit()
