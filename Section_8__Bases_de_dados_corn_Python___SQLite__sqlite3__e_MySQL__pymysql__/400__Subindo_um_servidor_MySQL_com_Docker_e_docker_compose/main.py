@@ -7,7 +7,7 @@ import os
 import dotenv
 import pymysql
 
-# TABLE_NAME = 'customers'
+TABLE_NAME = 'customers'
 
 dotenv.load_dotenv()
 
@@ -16,39 +16,37 @@ connection = pymysql.connect(
 	user=os.environ['MYSQL_USER'],
 	password=os.environ['MYSQL_PASSWORD'],
 	database=os.environ['MYSQL_DATABASE'],
-	# charset='utf8mb4'
+	charset='utf8mb4'
 )
 
 with connection:
 	with connection.cursor() as cursor:
 		cursor.execute(
 			'CREATE TABLE IF NOT EXISTS customers ('
-			# f'CREATE TABLE IF NOT EXISTS {TABLE_NAME} ('
 			'id INT NOT NULL AUTO_INCREMENT, '
 			'nome VARCHAR(50) NOT NULL, '
 			'idade INT NOT NULL, '
 			'PRIMARY KEY (id)'
 			') '
 		)
-		print(cursor)
 		# CUIDADO: ISSO LIMPA A TABELA
-		# cursor.execute(f'TRUNCATE TABLE {TABLE_NAME}')  # type: ignore
-		# connection.commit()
+		cursor.execute(f'TRUNCATE TABLE {TABLE_NAME}')
+	connection.commit()
 
-		# # Começo a manipular dados a partir daqui
+		# Começo a manipular dados a partir daqui
 
-		# with connection.cursor() as cursor:
-		# 	cursor.execute(  # type: ignore
-		# 		f'INSERT INTO {TABLE_NAME} '
-		# 		'(nome, idade) VALUES ("Luiz", 25) '
-		# 	)
-		# 	cursor.execute(  # type: ignore
-		# 		f'INSERT INTO {TABLE_NAME} '
-		# 		'(nome, idade) VALUES ("Luiz", 25) '
-		# 	)
-		# 	result = cursor.execute(  # type: ignore
-		# 		f'INSERT INTO {TABLE_NAME} '
-		# 		'(nome, idade) VALUES ("Luiz", 25) '
-		# 	)
-		# 	print(result)
-		# connection.commit()
+	with connection.cursor() as cursor:
+		cursor.execute(
+			f'INSERT INTO {TABLE_NAME} '
+			'(nome, idade) VALUES ("Luiz", 25) '
+		)
+		cursor.execute(
+			f'INSERT INTO {TABLE_NAME} '
+			'(nome, idade) VALUES ("Luiz", 25) '
+		)
+		result = cursor.execute(
+			f'INSERT INTO {TABLE_NAME} '
+			'(nome, idade) VALUES ("Luiz", 25) '
+		)
+		print(result)
+	connection.commit()
