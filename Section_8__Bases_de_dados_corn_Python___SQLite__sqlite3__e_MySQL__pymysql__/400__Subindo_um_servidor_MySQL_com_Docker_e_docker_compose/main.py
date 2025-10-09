@@ -91,20 +91,37 @@ with connection:
 		data4 = (
 			("Siri", 22, ),
 			("Helena", 15, ),
+			# ("Luiz", 18, ),
 		)
 		result = cursor.executemany(sql, data4)
-		print(sql)
-		print(data4)
-		print(result)
+		# print(sql)
+		# print(data4)
+		# print(result)
 	connection.commit()
 
 	# Lendo os valores com SELECT
 	with connection.cursor() as cursor:
+		# id_recebido = input('Digite um id: ')
+		coluna = 'id'
+		# menor_id = input('Digite o menor id: ')
+		menor_id = int(input('Digite o menor id: '))
+		# maior_id = input('Digite o maior id: ')
+		maior_id = int(input('Digite o maior id: '))
+
 		sql = (
 			f'SELECT * FROM {TABLE_NAME} '
+			# f'WHERE {coluna} > %s  '
+			# f'WHERE id > {id_recebido}  '
+			# 'WHERE id >= %s AND id <= %s  '
+			'WHERE id BETWEEN %s AND %s  '
 		)
-		cursor.execute(sql)  # type: ignore
-		data5 = cursor.fetchall()  # type: ignore
+		# cursor.execute(sql)
+		# cursor.execute(sql, (id_recebido,))
+		# print(cursor.mogrify(sql))
+		# print(cursor.mogrify(sql, (id_recebido,)))
+		cursor.execute(sql, (menor_id, maior_id))
+		print(cursor.mogrify(sql, (menor_id, maior_id)))
+		data5 = cursor.fetchall()
 
 		for row in data5:
 			print(row)
