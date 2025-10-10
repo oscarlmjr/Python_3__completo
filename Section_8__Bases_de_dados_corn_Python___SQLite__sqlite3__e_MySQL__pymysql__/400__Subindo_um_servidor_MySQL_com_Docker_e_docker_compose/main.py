@@ -39,7 +39,6 @@ with connection:
 	with connection.cursor() as cursor:
 		sql = (
 			f'INSERT INTO {TABLE_NAME} '
-			# '(nome, idade) VALUES ("Luiz", 25) '
 			'(nome, idade) '
 			'VALUES '
 			'(%s, %s) '
@@ -97,20 +96,20 @@ with connection:
 	connection.commit()
 
 	# Lendo os valores com SELECT
-	# with connection.cursor() as cursor:
+	with connection.cursor() as cursor:
 	# 	coluna = 'id'
 		# menor_id = int(input('Digite o menor id: '))
 		# maior_id = int(input('Digite o maior id: '))
-		# menor_id = 2
-		# maior_id = 4
+		menor_id = 2
+		maior_id = 4
 
-		# sql = (
-		# 	f'SELECT * FROM {TABLE_NAME} '
-			# 'WHERE id BETWEEN %s AND %s  '
-		# )
-		# cursor.execute(sql, (menor_id, maior_id))   # type: ignore
+		sql = (
+			f'SELECT * FROM {TABLE_NAME} '
+			'WHERE id BETWEEN %s AND %s  '
+		)
+		cursor.execute(sql, (menor_id, maior_id))   # type: ignore
 		# print(cursor.mogrify(sql, (menor_id, maior_id)))
-		# data5 = cursor.fetchall()
+		data5 = cursor.fetchall()
 
 		# for row in data5:
 		# 	print(row)
@@ -118,17 +117,28 @@ with connection:
 	# Apagando com DELETE, WHERE e placeholders no PyMySQL
 	with connection.cursor() as cursor:
 		sql = (
-			# f'UPDATE {TABLE_NAME} SET nome = "LUIZ" '
 			f'DELETE FROM {TABLE_NAME} '
-			# 'WHERE id = 4'
 			'WHERE id = %s'
 		)
-		# cursor.execute(sql)
-		# print(cursor.execute(sql))
-		print(cursor.execute(sql, (1,)))
+		# print(cursor.execute(sql, (1,)))
+		cursor.execute(sql, (1,))
 		connection.commit()
 
 		cursor.execute(f'SELECT * FROM {TABLE_NAME} ')  # type: ignore
 
+		# for row in cursor.fetchall():  # type: ignore
+		# 	print(row)
+
+	# Editando com UPDATE, WHERE e placeholders no PyMySQL
+	with connection.cursor() as cursor:
+		sql = (
+			f'UPDATE {TABLE_NAME} '
+			'SET nome=%s, idade=%s '
+			'WHERE id=%s'
+		)
+		cursor.execute(sql, ('Eleonor', 102, 4))
+		cursor.execute(f'SELECT * FROM {TABLE_NAME} ')
+
 		for row in cursor.fetchall():  # type: ignore
 			print(row)
+	connection.commit()
