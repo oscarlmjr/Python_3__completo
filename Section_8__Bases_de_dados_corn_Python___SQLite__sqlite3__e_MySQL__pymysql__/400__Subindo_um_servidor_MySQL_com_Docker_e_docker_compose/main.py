@@ -10,7 +10,8 @@ import pymysql
 import pymysql.cursors
 
 TABLE_NAME = 'customers'
-CURRENT_CURSOR = pymysql.cursors.SSDictCursor
+# CURRENT_CURSOR = pymysql.cursors.SSDictCursor
+CURRENT_CURSOR = pymysql.cursors.DictCursor
 
 dotenv.load_dotenv()
 
@@ -20,7 +21,7 @@ connection = pymysql.connect(
 	password=os.environ['MYSQL_PASSWORD'],
 	database=os.environ['MYSQL_DATABASE'],
 	charset='utf8mb4',
-	cursorclass=pymysql.cursors.DictCursor,
+	# cursorclass=pymysql.cursors.DictCursor,
 	cursorclass=CURRENT_CURSOR,
 )
 
@@ -133,22 +134,58 @@ with connection:
 			'WHERE id=%s'
 		)
 		cursor.execute(sql, ('Eleonor', 102, 4))
-		cursor.execute(f'SELECT * FROM {TABLE_NAME} ')
+		# cursor.execute(f'SELECT * FROM {TABLE_NAME} ')
+		resultFromSelect = cursor.execute(f'SELECT * FROM {TABLE_NAME} ')
 
-		print('For 1: ')
+		data6 = cursor.fetchall()
+		# print('For 1: ')
+		for row in cursor.fetchall():
+		# for row in cursor.fetchall_unbuffered():
+			print(row)
+		# cursor.execute(
+		# 	f'SELECT id from {TABLE_NAME} ORDER BY id DESC LIMIT 1'
+		# )
+		lastIdFromSelect = cursor.fetchone()
+		# print(lastIdFromSelect)
+
+		# resultFromSelect = cursor.execute(f'SELECT * FROM {TABLE_NAME} ')
+			# if row['id'] >= 5:
+			# 	break
+		# data6 = cursor.fetchall()
+		# print()
+		# print('For 2: ')
+		# cursor.scroll(-1)
+		# for row in cursor.fetchall_unbuffered():
 		# for row in data6:
-		for row in cursor.fetchall_unbuffered():
+			# print(row)
+
+		print('resultFromSelect', resultFromSelect)
+		print('len(data6)', len(data6))
+		print('rowcount', cursor.rowcount)
+
+		# sql = (
+		# 		f'INSERT INTO {TABLE_NAME} '
+		# 		'(nome, idade) '
+		# 		'VALUES '
+		# 		'(%s, %s) '
+		# 		)
+
+		# data3 = (
+		# 	{"name": "Sah", "age": 33, },
+		# 	{"name": "Júlia", "age": 74, },
+		# 	{"name": "Rose", "age": 53, },
+		# )
+		# result = cursor.executemany(sql, data3)
+		# cursor.execute(sql, data)
+
+		print('lastrowid', cursor.lastrowid)
+		print('lastrowid na mão', lastIdFromSelect)
+
+		# cursor.scroll(-1)
+		cursor.scroll(0, 'absolute')
+		print('rownumber', cursor.rownumber)
+
+		for row in cursor.fetchall():
 			print(row)
 
-			if row['id'] >= 5:
-				break
-		print()
-		print('For 2: ')
-		cursor.scroll(-1)
-		# cursor.scroll(1)
-		# cursor.scroll(-2)
-		# cursor.scroll(0, 'absolute')
-		# for row in data6:
-		for row in cursor.fetchall_unbuffered():
-			print(row)
 	connection.commit()
