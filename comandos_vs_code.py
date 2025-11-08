@@ -1,3 +1,5 @@
+# C:\Users\oscar_desktop\AppData\Local\Programs\Python\Python314\python.exe
+
 # multiplica cursor: Ctrl + Alt + arrow
 # multiplica cursor embaixo do cursor original: Shift + Alt + click 
 # multiplica cursor: Alt + click 
