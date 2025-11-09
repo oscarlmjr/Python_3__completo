@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Version: 1.104.3 (user setup)
 # Commit: 385651c938df8a906869babee516bffd0ddb9829
 # Date: 2025-10-02T12:30:51.747Z
@@ -9,6 +10,9 @@
 # OS: Windows_NT x64 10.0.19045
 
 
+=======
+# C:\Users\oscar_desktop\AppData\Local\Programs\Python\Python314\python.exe
+>>>>>>> 7cc3e4e369f7b57dc37ac1d43d3bcb5350371964
 
 # multiplica cursor: Ctrl + Alt + arrow
 # multiplica cursor embaixo do cursor original: Shift + Alt + click 
