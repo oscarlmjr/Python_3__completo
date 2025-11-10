@@ -1,4 +1,18 @@
+<<<<<<< HEAD
+# Version: 1.104.3 (user setup)
+# Commit: 385651c938df8a906869babee516bffd0ddb9829
+# Date: 2025-10-02T12:30:51.747Z
+# Electron: 37.3.1
+# ElectronBuildId: 12404162
+# Chromium: 138.0.7204.235
+# Node.js: 22.18.0
+# V8: 13.8.258.31-electron.0
+# OS: Windows_NT x64 10.0.19045
+
+
+=======
 # C:\Users\oscar_desktop\AppData\Local\Programs\Python\Python314\python.exe
+>>>>>>> 7cc3e4e369f7b57dc37ac1d43d3bcb5350371964
 
 # multiplica cursor: Ctrl + Alt + arrow
 # multiplica cursor embaixo do cursor original: Shift + Alt + click 
@@ -12,7 +26,7 @@
 # Enter no commit: Ctrl + Enter
 # Adiconar cursor à seleção: Ctrl + Shift + l
 # Replace: Ctrl + h
-# Emoji Windows + .
+# Emoji: Windows + .
 # sessão de API web, como FastAPI, use Ctrl+C para enviar um sinal de interrupção ao processo.
 
 # Para "encerrar" uma sessão de API no PowerShell, o método correto depende do con
