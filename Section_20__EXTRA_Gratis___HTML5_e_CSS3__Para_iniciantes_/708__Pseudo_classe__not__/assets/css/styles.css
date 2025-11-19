@@ -36,6 +36,10 @@ input:checked + p {
     background: red;
 }
 
+input:not(:checked) + p {
+    background: yellow;
+}
+
 /* .pai .lista li:first-child { */
 .pai .lista li:last-child {
     background: red;
@@ -43,4 +47,8 @@ input:checked + p {
 
 input:required {
     background: red;
+}
+
+p:not(.meio) {
+    color: blue;
 }
