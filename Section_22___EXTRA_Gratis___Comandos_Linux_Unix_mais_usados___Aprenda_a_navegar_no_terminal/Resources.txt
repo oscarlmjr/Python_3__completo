@@ -1,0 +1,2 @@
+Comandos Unix / Linux / Mac OS e Windows WSL2 que todo programador deveria saber
+https://www.youtube.com/watch?v=UQBAytRBNiM
