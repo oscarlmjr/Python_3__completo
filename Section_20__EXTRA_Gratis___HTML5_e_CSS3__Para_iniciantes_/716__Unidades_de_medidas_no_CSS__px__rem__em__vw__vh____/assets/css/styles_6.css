@@ -9,13 +9,21 @@ html {
 }
 
 .pai {
+    width: 50rem;   /* 500px */
     height: 100vh;
     background: yellow;
     overflow: hidden;
 }
 
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
+}
+
 p {
     font-size: 1.6rem;
+    /* font-size: 2vmax; */
 }
 
 .color-one {

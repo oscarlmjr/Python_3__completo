@@ -9,9 +9,10 @@ html {
 
 .pai {
     /* width: 10vw; */
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background: yellow;
+    overflow: hidden;
 }
 
 p {
