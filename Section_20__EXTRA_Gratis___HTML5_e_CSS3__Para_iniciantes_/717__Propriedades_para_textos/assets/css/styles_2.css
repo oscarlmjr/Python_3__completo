@@ -5,5 +5,5 @@ p {
     /* text-decoration: underline; */
     /* text-decoration: overline underline; */
     /* text-decoration: line-through; */
-    /* text-decoration: line-through overline underline; */
+    text-decoration: line-through overline underline;
 }
