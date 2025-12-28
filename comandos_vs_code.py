@@ -1,18 +1,10 @@
-<<<<<<< HEAD
-# Version: 1.104.3 (user setup)
-# Commit: 385651c938df8a906869babee516bffd0ddb9829
-# Date: 2025-10-02T12:30:51.747Z
-# Electron: 37.3.1
-# ElectronBuildId: 12404162
-# Chromium: 138.0.7204.235
-# Node.js: 22.18.0
-# V8: 13.8.258.31-electron.0
-# OS: Windows_NT x64 10.0.19045
+# Para mostrar caracteres de tabulação (Tab) e espaços no VS Code, ative a opção "Render Whitespace" (Renderizar Espaço em Branco) para ver setas (Tab) e pontos (espaços) continuamente, usando o atalho Ctrl+Shift+P e buscando por Render Whitespace, ou clicando no indicador "SPC" ou "TAB" na barra de status inferior para alternar a visualização.
 
+# Para usar caracteres de tabulação (tab characters):
+# Desmarque a caixa de seleção em Editor: Insert Spaces.
+# A tecla Tab passará a inserir um caractere de tabulação real.
 
-=======
-# C:\Users\oscar_desktop\AppData\Local\Programs\Python\Python314\python.exe
->>>>>>> 7cc3e4e369f7b57dc37ac1d43d3bcb5350371964
+# Para quebrar linha no VS Code, você pode usar o atalho Alt + Z para ativar/desativar a quebra de linha "virtual" (apenas visual) ou ir em Arquivo > Preferências > Configurações (ou Ctrl+,), pesquisar por editor.wordWrap e selecionar "on" para uma quebra automática por padrão, que ajusta o texto à largura da janela sem adicionar caracteres de nova linha no arquivo.
 
 # multiplica cursor: Ctrl + Alt + arrow
 # multiplica cursor embaixo do cursor original: Shift + Alt + click 

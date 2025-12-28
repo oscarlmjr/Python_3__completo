@@ -15,20 +15,23 @@
 }
 
 .filha2 {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     background: greenyellow;
     /* float: left; */
-    /* z-index: 1; */
+    /* z-index: 2; */
     /* z-index: 20000; */
     z-index: -1;
 }
 
 .filha1 {
     position: absolute;
+    /* top: 50px;    */
     top: 50%;
-    margin-top: -150px;
+    /* left: 50px; */
     left: 50%;
+    margin-top: -150px;
     margin-left: -150px;
-    /* z-index: 2; */
-    z-index: 20000;
+    /* z-index: 1; */
+    /* z-index: 10000; */
 }
