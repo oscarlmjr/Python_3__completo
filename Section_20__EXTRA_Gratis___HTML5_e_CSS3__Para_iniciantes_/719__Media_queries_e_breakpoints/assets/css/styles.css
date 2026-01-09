@@ -28,32 +28,3 @@
     height: 100%;
     background: red;
 }
-
-/* @media (max-width: 344px) { */
-/* @media screen and (max-width: 344px) { */
-/* @media all and (max-width: 344px) { */
-/* @media all and (max-width: 344px) { */
-@media all and (max-width: 578px) {
-    .grid .col {
-        width: 100%;
-    }
-}
-
-/* @media all and (min-width: 345px) and (max-width: 882px) { */
-@media all and (min-width: 579px) and (max-width: 882px) {
-    .grid .col {
-        width: 50%;
-    }
-}
-
-@media all and  (min-width: 883px) and (max-width: 1200px) {
-    .grid .col {
-        width: 33.33%;
-    }
-}
-
-@media all and (min-width: 1200px) {
-    .grid .col {
-        width: 25%;
-    }
-}

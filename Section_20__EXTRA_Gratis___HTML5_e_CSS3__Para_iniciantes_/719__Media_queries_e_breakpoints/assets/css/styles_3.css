@@ -4,11 +4,9 @@
     box-sizing: border-box;
 }
 
-.grid {
-    max-width: 1200px;
+/* .grid {
     padding: 15px;
-    margin: 0 auto;
-}
+} */
 
 .grid::after {
     content: '';
@@ -18,8 +16,6 @@
 
 .grid .col {
     width: 33.33%;
-    /* width: 50%; */
-    /* width: 100%; */
     height: 300px;
     float: left;
     padding: 15px;
@@ -31,39 +27,25 @@
     background: red;
 }
 
-.menu {
-    width: 100%;
-    position: fixed;
-    background: black;
-}
-
-.menu ul {
-    list-style: none;
-    display: block;
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
-}
-
 @media all and (max-width: 568px) {
     .grid .col {
         width: 100%;
     }
 }
 
-@media all and (min-width: 569px) and (max-width: 768px) {
+@media all and (min-width: 569px) and (max-width: 768px) {    
     .grid .col {
         width: 50%;
     }
 }
 
-@media all and  (min-width: 769px) and (max-width: 1200px) {
+@media all and (min-width: 769px) and (max-width: 1200px) {    
     .grid .col {
         width: 33.33%;
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) {    
     .grid .col {
         width: 25%;
     }
