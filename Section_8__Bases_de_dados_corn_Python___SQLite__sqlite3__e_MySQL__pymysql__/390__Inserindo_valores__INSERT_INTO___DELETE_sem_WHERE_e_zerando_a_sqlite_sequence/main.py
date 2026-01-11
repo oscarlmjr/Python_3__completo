@@ -34,6 +34,7 @@ connection.commit()
 
 # Registrar valores nas colunas da tabela
 # CUIDADO: sql injection
+# cursor.executemany('')
 cursor.execute(
     f'INSERT INTO {TABLE_NAME} '
     '(id, name, weight) '

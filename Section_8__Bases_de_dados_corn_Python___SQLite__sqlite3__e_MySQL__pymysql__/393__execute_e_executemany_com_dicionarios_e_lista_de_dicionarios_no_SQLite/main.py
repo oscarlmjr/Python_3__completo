@@ -30,20 +30,13 @@ cursor.execute(
 connection.commit()
 
 # Registrar valores nas colunas da tabela
-# CUIDADO: sql injection
 sql = (
 	f'INSERT INTO {TABLE_NAME} '
 	'(name, weight) '
 	'VALUES '
-	# '(?, ?)'
 	'(:nome, :peso)'
 )
-# cursor.executemany(
-# 	sql,
-# 	(
-# 		('Joana', 4), ('Luiz', 5)
-# 	)
-# )
+# cursor.executemany(	sql, (('Joana', 4), ('Luiz', 5)))
 cursor.execute(sql, {'nome': 'Sem nome', 'peso': 3})
 cursor.executemany(sql, (
 	{'nome': 'Joãozinho', 'peso': 3},

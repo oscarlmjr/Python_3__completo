@@ -45,7 +45,6 @@ cursor.executemany(sql, (
 	{'nome': 'Joana', 'peso': 5},
 ))
 connection.commit()
-# print(sql)
 
 cursor.close()
 connection.close()
