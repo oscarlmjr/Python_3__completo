@@ -35,7 +35,6 @@ cursor.execute(
 connection.commit()
 
 # Registrar valores nas colunas da tabela
-# CUIDADO: sql injection
 sql = (
 	f'INSERT INTO {TABLE_NAME} '
 	'(name, weight) '
@@ -51,8 +50,6 @@ cursor.executemany(sql, (
 ))
 connection.commit()
 
-# cursor.close()
-# connection.close()
 
 if __name__ == '__main__':
 	print(sql)
@@ -60,10 +57,10 @@ if __name__ == '__main__':
 	cursor.execute(
 		f'DELETE FROM {TABLE_NAME} '
 		'WHERE id = "3"'
-	)
+		)
 	cursor.execute(
-	 f'DELETE FROM {TABLE_NAME} '
-		 'WHERE id = 1'
+		f'DELETE FROM {TABLE_NAME} '
+		'WHERE id = 1'
 		)
 	connection.commit()
 

@@ -35,7 +35,6 @@ cursor.execute(
 connection.commit()
 
 # Registrar valores nas colunas da tabela
-# CUIDADO: sql injection
 sql = (
 	f'INSERT INTO {TABLE_NAME} '
 	'(name, weight) '
@@ -69,7 +68,9 @@ if __name__ == '__main__':
 
 	cursor.execute(
 	f'UPDATE {TABLE_NAME} '
+		# 'SET name="QUALQUER" '
 		'SET name="QUALQUER", weight=67.89 '
+		# 'WHERE id = 1'
 		'WHERE id = 2'
 	)
 	connection.commit()
