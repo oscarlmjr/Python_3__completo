@@ -2,3 +2,4 @@ https://www.youtube.com/watch?v=85k8se4Zo70
 https://www.docker.com/products/docker-desktop/
 https://docs.docker.com/engine/install/ubuntu/
 https://www.youtube.com/watch?v=05YN8F8ajBc
+https://gist.github.com/luizomf/8bc93474de107bff6ee09b1ceee481df
