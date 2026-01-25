@@ -6,6 +6,7 @@
 
 # Para quebrar linha no VS Code, você pode usar o atalho Alt + Z para ativar/desativar a quebra de linha "virtual" (apenas visual) ou ir em Arquivo > Preferências > Configurações (ou Ctrl+,), pesquisar por editor.wordWrap e selecionar "on" para uma quebra automática por padrão, que ajusta o texto à largura da janela sem adicionar caracteres de nova linha no arquivo.
 
+# alt + z --> quebra de linha visual
 # multiplica cursor: Ctrl + Alt + arrow
 # multiplica cursor embaixo do cursor original: Shift + Alt + click 
 # multiplica cursor: Alt + click 

@@ -1,5 +1,5 @@
-Free Web Accessibility Checker – Instant WCAG 2.2 Audit & Accessibility Score
+A11y Checker
 https://achecker.ca/
 
-Nu Html Checker
+Validador HTML
 https://validator.w3.org/nu/#textarea
