@@ -22,7 +22,6 @@
 .top3-content {
     max-width: 64rem;
     display: flex;
-    /* flex-flow: column wrap; */
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
