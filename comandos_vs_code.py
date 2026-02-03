@@ -1,4 +1,4 @@
-# Para mostrar caracteres de tabulação (Tab) e espaços no VS Code, ative a opção "Render Whitespace" (Renderizar Espaço em Branco) para ver setas (Tab) e pontos (espaços) continuamente, usando o atalho Ctrl+Shift+P e buscando por Render Whitespace, ou clicando no indicador "SPC" ou "TAB" na barra de status inferior para alternar a visualização.
+# Para mostrar caracteres de tabulação (Tab) e espaços no VS Code, ative a opção "Render Whitespace" (Renderizar Espaço em Branco) para ver setas (Tab) e pontos (espaços) continuamente, usando o atalho Ctrl+, e buscando por Render Whitespace, ou clicando no indicador "SPC" ou "TAB" na barra de status inferior para alternar a visualização.
 
 # Para usar caracteres de tabulação (tab characters):
 # Desmarque a caixa de seleção em Editor: Insert Spaces.
