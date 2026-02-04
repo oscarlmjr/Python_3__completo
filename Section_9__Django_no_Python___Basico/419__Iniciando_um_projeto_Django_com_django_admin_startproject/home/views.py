@@ -9,4 +9,5 @@ def home(request):
 	return render(
 		request, 
 		'home/index.html'
+		# 'global/base.html'
 	)
