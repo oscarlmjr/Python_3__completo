@@ -1,13 +1,16 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
 
-# Create your views here.
 
 def home(request):
 	print('home')
-	# return HttpResponse('home <b>do</b> app 1')
+
+	context = {
+			'text': 'Olá home'
+	}
+	
 	return render(
 		request, 
-		'home/index.html'
-		# 'global/base.html'
+		'home/index.html',
+		context,
 	)
