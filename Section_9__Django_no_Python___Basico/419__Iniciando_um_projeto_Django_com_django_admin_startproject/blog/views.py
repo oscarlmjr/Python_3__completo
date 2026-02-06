@@ -5,8 +5,9 @@ from django.shortcuts import render
 def blog(request):
 	print('blog')
 	
-	context = {'text': 'Olá blog',
-			'posts': posts}
+	context = {
+		'text': 'Olá blog',
+		'posts': posts}
 
 	return render(request, 
 		'blog/index.html',context,)
