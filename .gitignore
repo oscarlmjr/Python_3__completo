@@ -1,5 +1,6 @@
-.env
+#.env
 mysql_400
 mysql_402
+
 
 419__Iniciando_um_projeto_Django_com_django_admin_startproject/static_files/
